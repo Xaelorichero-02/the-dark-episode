@@ -1,0 +1,29 @@
+state={
+	id=946
+	name="STATE_946"
+
+	history={
+		owner = AUH
+		buildings = {
+			infrastructure = 3
+			9821 = {
+				naval_base = 1
+
+			}
+		}
+		victory_points = {
+			9821 1 
+		}
+		add_core_of = AUH
+		add_core_of = MNT
+
+	}
+
+	provinces={
+		9821 
+	}
+	manpower=22347
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,22 @@
+state={
+	id=955
+	name="STATE_955"
+
+	history={
+		owner = SAF
+		add_core_of = NMB
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		2207 
+	}
+	manpower=15000
+	state_category=enclave
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

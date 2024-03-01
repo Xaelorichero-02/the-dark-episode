@@ -1,0 +1,33 @@
+state={
+	id=948
+	name="STATE_948"
+
+	history={
+		victory_points = {
+			6626 3 
+		}
+		owner = AUH
+		add_core_of = AUH
+		add_core_of = ITA
+		add_core_of = LBV
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			arms_factory = 1
+			6626 = {
+				naval_base = 5
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		6626 
+	}
+	manpower=250170
+	state_category=large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

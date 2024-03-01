@@ -1,0 +1,25 @@
+state={
+	id=947
+	name="STATE_947"
+
+	history={
+		owner = AUH
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 2
+
+		}
+		add_core_of = AUH
+		add_core_of = ROM
+
+	}
+
+	provinces={
+		6761 11689 
+	}
+	manpower=300800
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

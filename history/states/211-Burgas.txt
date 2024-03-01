@@ -1,0 +1,34 @@
+
+state={
+	id=211
+	name="STATE_211"
+
+	history={
+		owner = OTT
+		victory_points = {
+			9902 7 
+		}
+		victory_points = {
+			9888 2 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			9902 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = BUL
+
+	}
+
+	provinces={
+		9888 9902 13294 
+	}
+	manpower=339599
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=4.000
+}

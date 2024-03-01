@@ -1,0 +1,6 @@
+AUH	= "countries/Austria.txt"
+OTT	= "countries/Ottomans.txt"
+JBS	= "countries/Saudi Arabia.txt"
+HEJ	= "countries/Hejaz.txt"
+BHR	= "countries/Qatar.txt"
+GAL	= "countries/Galicia-Lodoemria.txt"

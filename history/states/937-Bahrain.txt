@@ -1,0 +1,26 @@
+state={
+	id=937
+	name="STATE_937"
+
+	history={
+		add_core_of = BHR
+		owner = ENG
+		victory_points = {
+			8051 1
+		}
+		buildings = {
+			infrastructure = 1
+			8051 = {
+				naval_base = 2
+			}
+		}
+	}
+
+	provinces={
+		13281 
+	}
+	manpower=70000
+	state_category=small_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

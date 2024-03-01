@@ -1,0 +1,29 @@
+state={
+	id=945
+	name="STATE_945"
+
+	history={
+		owner = USA
+		add_core_of = SAM
+		buildings = {
+			infrastructure = 2
+			7290 = {
+				naval_base = 1
+
+			}
+
+		}
+		victory_points = {
+			7290 1 
+		}
+
+	}
+
+	provinces={
+		13080 
+	}
+	manpower=12908
+	state_category=small_island
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

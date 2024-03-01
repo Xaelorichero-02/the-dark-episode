@@ -1,0 +1,98 @@
+bookmarks = {
+	bookmark = {
+		name = "RUSSO_JAP_WAR_NAME"
+		desc = "RUSSO_JAP_WAR_DESC"
+		date = 1905.1.1.12
+		picture = "GFX_select_date_1905"
+		default_country = "RUS"
+		default = yes
+		
+		"FRA"={
+			history = "FRA_RUSSO_JAP_WAR_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"USA"={
+			history = "USA_RUSSO_JAP_WAR_DESC"
+			ideology = democratic
+			ideas = {
+				home_of_the_free
+			}
+			focuses = {
+			}
+		}
+		"ENG"={
+			history = "ENG_RUSSO_JAP_WAR_DESC"
+			ideology = democratic
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"GER"={
+			history = "GER_RUSSO_JAP_WAR_DESC"
+			ideology = fascism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"AUH"={
+			history = "AUH_RUSSO_JAP_WAR_DESC"
+			ideology = fascism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"OTT"={
+			history = "OTT_RUSSO_JAP_WAR_DESC"
+			ideology = fascism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"RUS"={
+			history = "RUS_RUSSO_JAP_WAR_DESC"
+			ideology = communism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		"---"={
+			history = "OTHER_RUSSO_JAP_WAR_DESC"
+		}
+
+
+		### MINORS ###
+		"JAP"={
+			minor = yes
+			history = "JAP_RUSSO_JAP_WAR_DESC"
+			ideology = fascism
+			ideas = {
+				state_shintoism
+				JAP_militarism
+			}	
+			focuses = {
+			}
+		}
+		"ITA"={
+			minor = yes
+			history = "ITA_RUSSO_JAP_WAR_DESC"
+			ideology = fascism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		effect = {
+			randomize_weather = 22345
+		}
+	}
+}

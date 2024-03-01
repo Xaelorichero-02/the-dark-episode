@@ -1,0 +1,32 @@
+state={
+	id=936
+	name="STATE_936"
+
+	history={
+		owner = JBS
+		victory_points = {
+			3942 1 
+		}
+		victory_points = {
+			1549 1 
+		}
+		victory_points = {
+			6883 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = JBS
+		add_core_of = SYR
+
+	}
+
+	provinces={
+		4486 7184 10383 
+	}
+	manpower=1874
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

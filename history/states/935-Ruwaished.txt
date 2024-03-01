@@ -1,0 +1,30 @@
+state={
+	id=935
+	name="STATE_935"
+
+	history={
+		owner = JBS
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			7151 1 
+		}
+		victory_points = {
+			11976 1 
+		}
+		add_core_of = JBS
+		add_core_of = JOR
+
+	}
+
+	provinces={
+		1544 4440 4562 4574 4591 4603 11976 13289 
+	}
+	manpower=186400
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

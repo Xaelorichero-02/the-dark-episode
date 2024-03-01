@@ -1,0 +1,272 @@
+characters={
+	AUH_franz_joseph_i={
+		name="Franz Joseph I"
+		portraits={
+			civilian={
+				large="gfx/leaders/AUH/Portrait_Habsburg_Franz_Joseph_I.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1916.11.21.1"
+			traits = {
+				kaiser_of_the_old_world
+			}
+		}
+	}
+	AUH_karl_i={
+		name="Karl I"
+		portraits={
+			civilian={
+				large="gfx/leaders/AUH/Portrait_Habsburg_Karl_I.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+		}
+	}
+	AUH_franz_conrad_von_hontzendorf={
+		name="Franz Conrad von Hötzendorf"
+		portraits={
+			army={
+				large="gfx/leaders/AUH/Portrait_Habsburg_Franz_Conrad_von_Hotzendorf.dds"
+				small="gfx/advisors/AUH/Portrait_Habsburg_Franz_Conrad_von_Hotzendorf.dds"
+			}
+		}
+		field_marshal={
+			traits={ offensive_doctrine politically_connected }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+		advisor={
+			slot = army_chief
+			idea_token = AUH_franz_conrad_von_hontzendorf
+			allowed = {
+				original_tag = AUH
+			}
+			traits = {
+				army_chief_defensive_1 
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = AUH_franz_conrad_von_hontzendorf_2
+			allowed = {
+				original_tag = AUH
+			}
+			traits = {
+				grand_battle_plan_expert 
+			}
+		}
+	}
+	AUH_arthur_arz_von_straussenburg={
+		name="Arthur Arz von Straußenburg"
+		portraits={
+			army={
+				large="gfx/leaders/AUH/Portrait_Habsburg_Arthur_Arz_von_Straussenburg.dds"
+				small="gfx/advisors/AUH/Portrait_Habsburg_Arthur_Arz_von_Straussenburg.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=4
+			attack_skill=5
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=5
+		}
+		advisor={
+			slot = army_chief
+			idea_token = AUH_arthur_arz_von_straussenburg
+			allowed = {
+				original_tag = AUH
+			}
+			traits = {
+				army_chief_offensive_3
+			}
+		}
+	}
+	AUH_friedrich_von_beck_rzikowsky={
+		name="Friedrich von Beck-Rzikowsky"
+		portraits={
+			army={
+				large="gfx/leaders/AUH/Portrait_Habsburg_Friedrich_von_Beck_Rzikowsky.dds"
+				small="gfx/advisors/AUH/Portrait_Habsburg_Friedrich_von_Beck_Rzikowsky.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard war_hero }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			visible = {
+				has_country_flag = AUH_von_beck_recalled
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = AUH_friedrich_von_beck_rzikowsky
+			allowed = {
+				original_tag = AUH
+			}
+			available = {
+				has_country_flag = AUH_von_beck_recalled
+			}
+			visible = {
+				has_country_flag = AUH_von_beck_recalled
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+		}
+		advisor={
+			slot = theorist
+			idea_token = AUH_friedrich_von_beck_rzikowsky_2
+			allowed = {
+				original_tag = AUH
+			}
+			available = {
+				has_country_flag = AUH_von_beck_recalled
+			}
+			visible = {
+				has_country_flag = AUH_von_beck_recalled
+			}
+			traits = {
+				grand_battle_plan_expert
+				mass_assault_expert 
+			}
+			cost = 75
+		}
+	}
+	AUH_eduard_von_bohm_ermolli={
+		name="Eduard von Böhm-Ermolli"
+		portraits={
+			army={
+				large="gfx/leaders/AUH/Portrait_Habsburg_Eduard_von_Bohm_Ermolli.dds"
+				small="gfx/advisors/AUH/Portrait_Habsburg_Eduard_von_Bohm_Ermolli.dds"
+			}
+		}
+		field_marshal={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+		}
+		advisor={
+			slot = high_command
+			idea_token = AUH_eduard_von_bohm_ermolli
+			allowed = {
+				original_tag = AUH
+			}
+			traits = {
+				army_infantry_2
+			}
+		}
+	}
+	AUH_friedrich_von_osterreich_teschen={
+		name="Friedrich von Österreich-Teschen"
+		portraits={
+			army={
+				large="gfx/leaders/AUH/Portrait_Habsburg_Friedrich_von_Osterreich_Teschen.dds"
+				small="gfx/advisors/AUH/Portrait_Habsburg_Friedrich_von_Osterreich_Teschen.dds"
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	AUH_hermann_kovess_von_kovesshaza={
+		name="Hermann Kövess von Kövessháza"
+		portraits={
+			army={
+				large="gfx/leaders/AUH/Portrait_Habsburg_Hermann_Kovess_von_Kovesshaza.dds"
+				small="gfx/advisors/AUH/Portrait_Habsburg_Hermann_Kovess_von_Kovesshaza.dds"
+			}
+		}
+		field_marshal={
+			traits={ inspirational_leader organisational_leader offensive_doctrine }
+			skill=4
+			attack_skill=5
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+		}
+		advisor={
+			slot = army_chief
+			idea_token = AUH_hermann_kovess_von_kovesshaza
+			allowed = {
+				original_tag = AUH
+			}
+			traits = {
+				army_chief_offensive_3
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = AUH_hermann_kovess_von_kovesshaza_2
+			allowed = {
+				original_tag = AUH
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+		}
+	}
+	AUH_svetozar_boroevic_von_bojna={
+		name="Svetozar Boroević von Bojna"
+		portraits={
+			army={
+				large="gfx/leaders/AUH/Portrait_Habsburg_Svetozar_Boroevic_von_Bojna.dds"
+				small="gfx/advisors/AUH/Portrait_Habsburg_Svetozar_Boroevic_von_Bojna.dds"
+			}
+		}
+		field_marshal={
+			traits={ inspirational_leader brilliant_strategist offensive_doctrine war_hero }
+			skill=5
+			attack_skill=5
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=5
+		}
+		advisor={
+			slot = high_command
+			idea_token = AUH_svetozar_boroevic_von_bojna
+			allowed = {
+				original_tag = AUH
+			}
+			traits = {
+				army_entrenchment_3
+			}
+		}
+	}
+	AUH_geza_lukachch_von_somorja={
+		name="Géza Lukachich von Somorja"
+		portraits={
+			army={
+				large="gfx/leaders/AUH/Portrait_Habsburg_Geza_Lukachich_von_Somorja.dds"
+				small="gfx/advisors/AUH/Portrait_Habsburg_Geza_Lukachich_von_Somorja.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_mountaineer }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+}
