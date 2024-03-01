@@ -269,4 +269,55 @@ characters={
 			logistics_skill=3
 		}
 	}
+	AUH_albert_bartha={
+		name="Albert Bartha"
+		portraits={
+			army={
+				large="gfx/leaders/AUH/Portrait_Habsburg_Albert_Bartha.dds"
+				small="gfx/advisors/AUH/Portrait_Habsburg_Albert_Bartha.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	AUH_karoly_bartha={
+		name="Károly Bartha"
+		portraits={
+			army={
+				large="gfx/leaders/HUN/Portrait_Hungary_Karoly_Bartha.dds"
+				small="gfx/advisors/HUN/Portrait_Hungary_Karoly_Bartha.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_harsh }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	AUH_vilko_begic={
+		name="Vilko Begić"
+		portraits={
+			army={
+				large="gfx/leaders/CRO/Portrait_Croatia_Vilko_Begic.dds"
+				small="gfx/advisors/CRO/Portrait_Croatia_Vilko_Begic.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
 }
