@@ -40,6 +40,9 @@ recruit_character = AUH_friedrich_von_osterreich_teschen
 recruit_character = AUH_hermann_kovess_von_kovesshaza
 recruit_character = AUH_svetozar_boroevic_von_bojna
 recruit_character = AUH_geza_lukachch_von_somorja
+recruit_character = AUH_albert_bartha
+recruit_character = AUH_karoly_bartha
+recruit_character = AUH_vilko_begic
 
 if = {
 	limit = {
