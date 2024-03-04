@@ -1,0 +1,14 @@
+characters={
+	BOS_eugen_von_albori={
+		name="Eugen von Albori"
+		portraits={
+			civilian={
+				large="gfx/leaders/AUH/Portrait_Habsburg_Eugen_Albori.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+		}
+	}
+}

@@ -1,0 +1,301 @@
+focus_tree = {
+	id = austria_hungary_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AUH
+		}
+	}
+	default = no
+
+	focus = {
+		id = AUH_send_ultimatum_to_serbia
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 0.8
+		x = 3
+		y = 0
+		available_if_capitulated = yes
+		will_lead_to_war_with = SER
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_global_flag = franz_dead
+		}
+		completion_reward = {
+			SER = {
+				country_event = austria_hungary.2
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+	focus = {
+		id = AUH_at_war
+		icon = GFX_goal_generic_military_sphere
+		cost = 7.2
+		x = 0
+		y = 1
+		relative_position_id=AUH_send_ultimatum_to_serbia
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_war = yes
+		}
+		prerequisite = {
+			focus = AUH_send_ultimatum_to_serbia
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+	}
+	focus = {
+		id = AUH_recall_von_beck
+		icon = GFX_focus_generic_military_mission
+		cost = 7.2
+		x = -2
+		y = 1
+		relative_position_id=AUH_at_war
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = AUH_at_war
+		}
+		completion_reward = {
+			custom_effect_tooltip = available_commander_chief_of_army
+			show_ideas_tooltip = AUH_friedrich_von_beck_rzikowsky
+			set_country_flag = AUH_von_beck_recalled
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+	}
+	focus = {
+		id = AUH_the_serbian_campaign
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 7.2
+		x = 0
+		y = 1
+		relative_position_id=AUH_at_war
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = AUH_at_war
+		}
+		completion_reward = {
+			SER = {
+				add_timed_idea = { id = AUH_offensive_in_serbia days = 120 }
+			}
+		}
+		search_filters = { }
+	}
+	focus = {
+		id = AUH_the_russian_campaign
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 7.2
+		x = 2
+		y = 1
+		relative_position_id=AUH_at_war
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 10
+		}
+		prerequisite = {
+			focus = AUH_at_war
+		}
+		completion_reward = {
+		}
+		search_filters = { }
+	}
+	focus = {
+		id = AUH_political_effort
+		text = political_effort
+		icon = GFX_goal_tripartite_pact
+		cost = 10
+		x = 15
+		y = 0
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 120
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = AUH_diplomatic_effort
+		text = diplomatic_effort
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		x = -5
+		y = 1
+		relative_position_id=AUH_political_effort
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = AUH_political_effort
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 120
+		}
+		search_filters = {  }
+	}
+	focus = {
+		id = AUH_the_balkan_game
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id=AUH_diplomatic_effort
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = AUH_diplomatic_effort
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 120
+		}
+		search_filters = {  }
+	}
+	focus = {
+		id = AUH_the_bosnian_gambit
+		icon = GFX_goal_generic_major_war
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id=AUH_the_balkan_game
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = AUH_the_balkan_game
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			country_event = austria_hungary.1
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+	focus = {
+		id = AUH_integrate_bosnia
+		icon = GFX_goal_generic_position_armies
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id=AUH_the_bosnian_gambit
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = AUH_the_bosnian_gambit
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_state_core = 104
+			add_state_core = 804
+			if = {
+				limit = {
+					controls_state = 939
+				}
+				add_state_core = 939
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+	focus = {
+		id = AUH_anti_serbian_politic
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id=AUH_the_bosnian_gambit
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = AUH_the_bosnian_gambit
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		allow_branch = {
+			has_global_flag = AUH_serbia_irritated
+		}
+		completion_reward = {
+			add_political_power = 120
+		}
+		search_filters = {  }
+	}
+	focus = {
+		id = AUH_grant_language_rights_for_serbs
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id=AUH_the_bosnian_gambit
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = AUH_the_bosnian_gambit
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		allow_branch = {
+			has_global_flag = AUH_serbia_for_novi_pazar
+		}
+		completion_reward = {
+			remove_ideas = AUH_yugoslav_irredentism
+		}
+		search_filters = {  }
+	}
+	focus = {
+		id = AUH_the_pig_war
+		icon = GFX_goal_generic_trade
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id=AUH_anti_serbian_politic
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = AUH_anti_serbian_politic
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = AUH_the_pig_war_idea
+			send_embargo = SER
+			hidden_effect = {
+				news_event = TDE_news.2
+			}
+		}
+		search_filters = {  }
+	}
+	focus = {
+		id = AUH_increase_trade_with_serbia
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id=AUH_grant_language_rights_for_serbs
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = AUH_grant_language_rights_for_serbs
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 120
+		}
+		search_filters = {  }
+	}
+}

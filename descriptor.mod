@@ -1,0 +1,16 @@
+version="0.1.0"
+tags={
+	"National Focuses"
+	"Historical"
+	"Technologies"
+	"Map"
+	"Gameplay"
+	"Events"
+	"Ideologies"
+	"Military"
+	"Graphics"
+	"Alternative History"
+}
+name="The Dark Episode"
+supported_version="1.13.7"
+remote_file_id="3171316988"

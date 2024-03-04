@@ -1,0 +1,217 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = endonyms
+					91 = {
+						OR = {
+							is_controlled_by = GER
+							is_controlled_by = AUH
+							is_controlled_by = AUS
+							is_controlled_by = BAY
+							is_controlled_by = PRE
+							is_controlled_by = SAX
+							is_controlled_by = MEK
+							is_controlled_by = WUR
+							is_controlled_by = SHL
+							is_controlled_by = DNZ
+						}
+					}
+				}
+				91 = { set_state_name = "Lemberg" }
+				set_province_name = { id = 11479 name = "Lemberg" }
+				set_province_name = { id = 3483 name = "Tannstadt" }
+				else = {
+					limit = {
+						has_global_flag = endonyms
+						91 = {
+							OR = {
+								is_controlled_by = POL
+								is_controlled_by = KSH
+								is_controlled_by = GAL
+							}
+						}
+					}
+					91 = { set_state_name = "Lwów" }
+					set_province_name = { id = 11479 name = "Lwów" }
+					set_province_name = { id = 3483 name = "Tarnopol" }
+				}
+				else = {
+					limit = {
+						has_global_flag = endonyms
+						91 = {
+							OR = {
+								is_controlled_by = SOV
+								is_controlled_by = RUS
+							}
+						}
+					}
+					91 = { set_state_name = "Lvóv" }
+					set_province_name = { id = 11479 name = "Lvóv" }
+					set_province_name = { id = 3483 name = "Ternopol" }
+				}
+				else = {
+					91 = { set_state_name = "Lviv" }
+					set_province_name = { id = 11479 name = "Lviv" }
+					set_province_name = { id = 3483 name = "Ternopil" }
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = endonyms
+					797 = {
+						is_controlled_by = OTT
+					}
+				}
+				797 = { set_state_name = "Kostantiniyye" }
+				set_province_name = { id = 9833 name = "Kostantiniyye" }
+				else = {
+					limit = {
+						has_global_flag = endonyms
+						797 = {
+							OR = {
+								is_controlled_by = GRE
+								#is_controlled_by = IOS
+								#is_controlled_by = CRE
+								#is_controlled_by = SMS
+							}
+						}
+					}
+					797 = { set_state_name = "Konstantinoupolis" }
+					set_province_name = { id = 9833 name = "Konstantinoupolis" }
+				}
+				else = {
+					limit = {
+						has_global_flag = endonyms
+						797 = {
+							is_controlled_by = SOV
+						}
+					}
+					797 = { set_state_name = "Kaganograd" }
+					set_province_name = { id = 9833 name = "Kaganograd" }
+				}
+				else = {
+					limit = {
+						has_global_flag = endonyms
+						797 = {
+							is_controlled_by = RUS
+						}
+					}
+					797 = { set_state_name = "Cargrad" }
+					set_province_name = { id = 9833 name = "Cargrad" }
+				}
+				else = {
+					limit = {
+						has_global_flag = endonyms
+						797 = {
+							OR = {
+								is_controlled_by = BUL
+								is_controlled_by = MAC
+								is_controlled_by = SER
+								is_controlled_by = MNT
+								is_controlled_by = BOS
+								is_controlled_by = HRZ
+								is_controlled_by = CRO
+								is_controlled_by = SLV
+								is_controlled_by = YUG
+							}
+						}
+					}
+					797 = { set_state_name = "Carigrad" }
+					set_province_name = { id = 9833 name = "Carigrad" }
+				}
+				else = {
+					limit = {
+						has_global_flag = endonyms
+						797 = {
+							OR = {
+								is_controlled_by = UKR
+								is_controlled_by = BLR
+							}
+						}
+					}
+					797 = { set_state_name = "Cargorod" }
+					set_province_name = { id = 9833 name = "Cargorod" }
+				}
+				else = {
+					limit = {
+						has_global_flag = endonyms
+						797 = {
+							OR = {
+								is_controlled_by = POL
+								is_controlled_by = KSH
+							}
+						}
+					}
+					797 = { set_state_name = "Carogród" }
+					set_province_name = { id = 9833 name = "Carogród" }
+				}
+				else = {
+					limit = {
+						has_global_flag = endonyms
+						797 = {
+							OR = {
+								is_controlled_by = SLO
+								is_controlled_by = CZE
+							}
+						}
+					}
+					797 = { set_state_name = "Carihrad" }
+					set_province_name = { id = 9833 name = "Carihrad" }
+				}
+				else = {
+					limit = {
+						has_global_flag = endonyms
+						797 = {
+							OR = {
+								is_controlled_by = SAU
+								is_controlled_by = IRQ
+								is_controlled_by = YEM
+								is_controlled_by = OMA
+								is_controlled_by = UAE
+								is_controlled_by = HEJ
+								is_controlled_by = JBS
+								is_controlled_by = PAL
+								is_controlled_by = SYR
+								is_controlled_by = LEB
+								is_controlled_by = JOR
+								is_controlled_by = BHR
+								is_controlled_by = QAT
+								is_controlled_by = EGY
+								is_controlled_by = ALG
+								is_controlled_by = SUD
+								is_controlled_by = TUN
+								is_controlled_by = MOR
+								is_controlled_by = WES
+								is_controlled_by = MRT
+								is_controlled_by = ADU
+							}
+						}
+					}
+					797 = { set_state_name = "Qustantiniyya" }
+					set_province_name = { id = 9833 name = "Qustantiniyya" }
+				}
+				else = {
+					limit = {
+						has_global_flag = endonyms
+						797 = {
+							is_controlled_by = PER
+						}
+					}
+					797 = { set_state_name = "Qostantaniye" }
+					set_province_name = { id = 9833 name = "Qostantaniye" }
+				}
+				else = {
+					limit = {
+						has_global_flag = endonyms
+					}
+					797 = { set_state_name = "Istanbul" }
+					set_province_name = { id = 9833 name = "Istanbul" }
+				}
+			}
+		}
+	}
+}

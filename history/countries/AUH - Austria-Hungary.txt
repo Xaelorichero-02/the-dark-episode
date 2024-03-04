@@ -58,6 +58,8 @@ if = {
 	}
 }
 
+set_global_flag = AUH_serbia_irritated
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1930.11.9"

@@ -1,0 +1,171 @@
+﻿###########################
+# Austro-Hungarian Events
+###########################
+
+add_namespace = austria_hungary
+
+# Bosnian Gambit Choice
+country_event = {
+	id = austria_hungary.1
+	title = austria_hungary.1.t
+	desc = austria_hungary.1.d
+	picture = GFX_report_event_african_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = austria_hungary.1.a
+		custom_effect_tooltip = historial_choice_tt
+		ai_chance = {
+			base = 10
+		}
+		annex_country = {
+			target = BOS
+			transfer_troops = yes
+		}
+		OTT = {
+			transfer_state = 939
+		}
+		add_opinion_modifier = { modifier = enemy_50 target = SER }
+		add_opinion_modifier = { modifier = friend_40 target = OTT }
+		hidden_effect = {
+			news_event = TDE_news.1
+			SER = { add_opinion_modifier = { modifier = enemy_50 target = AUH } }
+			OTT = { add_opinion_modifier = { modifier = friend_40 target = AUH } }
+		}
+	}
+	
+	option = {
+		name = austria_hungary.1.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+		}
+		annex_country = {
+			target = BOS
+			transfer_troops = yes
+		}
+		add_opinion_modifier = { modifier = enemy_80 target = SER }
+		hidden_effect = {
+			news_event = TDE_news.1
+			SER = { add_opinion_modifier = { modifier = enemy_80 target = SER } }
+		}
+	}
+
+	option = {
+		name = austria_hungary.1.c
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+		}
+		annex_country = {
+			target = BOS
+			transfer_troops = yes
+		}
+		SER = {
+			transfer_state = 939
+		}
+		set_global_flag = AUH_serbia_for_novi_pazar
+		set_global_flag = AUH_no_franz_dead
+		clr_global_flag = AUH_serbia_irritated
+		add_opinion_modifier = { modifier = friend_40 target = SER }
+		hidden_effect = {
+			news_event = TDE_news.1
+			SER = { add_opinion_modifier = { modifier = friend_40 target = AUH } }
+		}
+	}
+}
+
+# Serbian Ultimatum (For Serbia)
+country_event = {
+	id = austria_hungary.2
+	title = austria_hungary.2.t
+	desc = austria_hungary.2.d
+	picture = GFX_report_event_african_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = austria_hungary.2.a
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+		}
+		AUH = {
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = SER
+					autonomous_state = autonomy_dominion
+					freedom_level = 0.65
+				}
+				else = {
+					puppet = SER
+				}
+			}
+		}
+		hidden_effect = {
+			news_event = TDE_news.3
+		}
+	}
+	
+	option = {
+		name = austria_hungary.2.b
+		custom_effect_tooltip = historial_choice_tt
+		ai_chance = {
+			base = 10
+		}
+		AUH = {
+			country_event = austria_hungary.3
+		}
+		hidden_effect = {
+			news_event = TDE_news.4
+		}
+	}
+
+}
+
+# Bosnian Gambit Choice
+country_event = {
+	id = austria_hungary.3
+	title = austria_hungary.3.t
+	desc = austria_hungary.3.d
+	picture = GFX_report_event_african_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = austria_hungary.2.a
+		custom_effect_tooltip = historial_choice_tt
+		ai_chance = {
+			base = 10
+		}
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = SER
+			expire = 1
+		} 
+	}
+	
+	option = {
+		name = austria_hungary.2.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+		}
+	}
+}

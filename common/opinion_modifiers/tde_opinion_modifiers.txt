@@ -1,0 +1,59 @@
+opinion_modifiers = {
+
+	friend_40 = {
+		value = 40
+	}
+
+	friend_50 = {
+		value = 50
+	}
+
+	friend_60 = {
+		value = 60
+	}
+
+	friend_70 = {
+		value = 70
+	}
+
+	friend_80 = {
+		value = 80
+	}
+
+	friend_90 = {
+		value = 90
+	}
+
+	friend_100 = {
+		value = 100
+	}
+
+	enemy_40 = {
+		value = -40
+	}
+
+	enemy_50 = {
+		value = -50
+	}
+
+	enemy_60 = {
+		value = -60
+	}
+
+	enemy_70 = {
+		value = -70
+	}
+
+	enemy_80 = {
+		value = -80
+	}
+
+	enemy_90 = {
+		value = -90
+	}
+
+	enemy_100 = {
+		value = -100
+	}
+
+}
