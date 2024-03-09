@@ -59,16 +59,16 @@ if = {
 }
 
 set_politics = {
-	ruling_party = democratic
-	last_election = "1936.1.1"
+	ruling_party = neutrality
+	last_election = "1881.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 33
-	neutrality = 33
-	communism = 34
+	democratic = 15
+	neutrality = 80
+	communism = 5
 }
 
 recruit_character = BOS_eugen_von_albori

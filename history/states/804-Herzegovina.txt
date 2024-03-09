@@ -17,7 +17,13 @@ state={
 		}
 		add_core_of = BOS
 		add_core_of = HRZ
-
+		1908.10.7 = {
+			owner = AUH
+			controller = AUH
+		}
+		1911.1.1 = {
+			add_core_of = AUH
+		}
 	}
 
 	provinces={

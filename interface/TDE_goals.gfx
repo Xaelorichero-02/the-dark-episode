@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_goal_GEN_attack_imperial_germany"
+		texturefile = "gfx/interface/goals/GEN_attack_imperial_germany.dds"			
+	}	
+
+}

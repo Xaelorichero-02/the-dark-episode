@@ -1,18 +1,30 @@
 ideas = {
 
 	country = {
-
 		AUH_offensive_in_serbia = {
 			picture = generic_tank_manufacturer_1
 
 			allowed = {
-				original_tag = SER
+				original_tag = AUH
 			}
 			
 			targeted_modifier = {
-				tag = AUH
+				tag = SER
 				attack_bonus_against = 0.3
 				defense_bonus_against = 0.3
+			}
+		}
+		AUH_the_pig_war_idea = {
+			picture = generic_tank_manufacturer_1
+
+			allowed = {
+				original_tag = AUH
+			}
+
+			modifier = {
+				political_power_gain = 0.05
+				production_factory_efficiency_gain_factor = -0.15
+				consumer_goods_factor = -0.05
 			}
 		}
 	}

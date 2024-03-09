@@ -88,9 +88,7 @@ focus_tree = {
 			focus = AUH_at_war
 		}
 		completion_reward = {
-			SER = {
-				add_timed_idea = { id = AUH_offensive_in_serbia days = 120 }
-			}
+			add_timed_idea = { idea = AUH_offensive_in_serbia days = 120 }
 		}
 		search_filters = { }
 	}
@@ -149,9 +147,28 @@ focus_tree = {
 		search_filters = {  }
 	}
 	focus = {
+		id = AUH_german_military_cooperation
+		icon = GFX_goal_generic_military_deal
+		cost = 7.2
+		x = 0
+		y = 1
+		relative_position_id=AUH_diplomatic_effort
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = AUH_diplomatic_effort
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = german_advisors
+		}
+		search_filters = {  }
+	}
+	focus = {
 		id = AUH_the_balkan_game
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10
+		cost = 4.4
 		x = -2
 		y = 1
 		relative_position_id=AUH_diplomatic_effort
@@ -295,6 +312,93 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 120
+		}
+		search_filters = {  }
+	}
+	focus = {
+		id = AUH_european_politics
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 4.4
+		x = 2
+		y = 1
+		relative_position_id=AUH_diplomatic_effort
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = AUH_diplomatic_effort
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_political_power = 120
+		}
+		search_filters = {  }
+	}
+	focus = {
+		id = AUH_deatagonize_italy
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id=AUH_european_politics
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = AUH_european_politics
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			custom_effect_tooltip = AUH_deatagonize_italy_tt
+			hidden_effect = {
+				ITA = { remove_opinion_modifier = { modifier = enemy_50 target = AUH } }
+				AUH = { remove_opinion_modifier = { modifier = enemy_50 target = ITA } }
+				ITA = { add_opinion_modifier = { modifier = enemy_40 target = AUH } }
+				AUH = { add_opinion_modifier = { modifier = enemy_40 target = ITA } }
+			}
+		}
+		search_filters = {  }
+	}
+	focus = {
+		id = AUH_trieste_for_alliance
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id=AUH_deatagonize_italy
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = AUH_deatagonize_italy
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+	focus = {
+		id = AUH_demarcate_the_romanian_border
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id=AUH_deatagonize_italy
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = AUH_deatagonize_italy
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			custom_effect_tooltip = AUH_demarcate_the_romanian_border_tt
+			hidden_effect = {
+				ROM = { remove_opinion_modifier = { modifier = enemy_50 target = AUH } }
+				AUH = { remove_opinion_modifier = { modifier = enemy_50 target = ROM } }
+				ROM = { add_opinion_modifier = { modifier = enemy_40 target = AUH } }
+				AUH = { add_opinion_modifier = { modifier = enemy_40 target = ROM } }
+			}
 		}
 		search_filters = {  }
 	}

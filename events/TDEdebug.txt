@@ -1,0 +1,48 @@
+﻿###########################
+# Debug Events
+###########################
+
+add_namespace = tde_Debug
+
+# Bosnian Gambit Choice
+country_event = {
+	id = tde_Debug.1
+	title = tde_Debug.1.t
+	desc = tde_Debug.1.d
+	picture = GFX_report_event_african_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tde_Debug.1.a
+		custom_effect_tooltip = historial_choice_tt
+		OTT = {
+			end_puppet = BUL
+		}
+		BUL = {
+			transfer_state = 184
+			transfer_state = 211
+			transfer_state = 940
+			transfer_state = 941
+		}
+		SER = {
+			transfer_state = 938
+			transfer_state = 802
+			transfer_state = 106
+			transfer_state = 943
+		}
+		GRE = {
+			transfer_state = 956
+			transfer_state = 731
+			transfer_state = 805
+		}
+		ALB = {
+			transfer_state = 934
+			transfer_state = 44
+		}
+	}
+	
+	option = {
+		name = tde_Debug.1.b
+	}
+}

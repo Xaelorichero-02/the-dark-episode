@@ -320,4 +320,72 @@ characters={
 			logistics_skill=2
 		}
 	}
+	AUH_paul_puhallo_von_brlog={
+		name="Paul Puhallo von Brlog"
+		portraits={
+			army={
+				large="gfx/leaders/AUH/Portrait_Habsburg_Paul_Puhallo_von_Brlog.dds"
+				small="gfx/advisors/AUH/Portrait_Habsburg_Paul_Puhallo_von_Brlog.dds"
+			}
+		}
+		corps_commander={
+			traits={ fortress_buster }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+	AUH_sandor_bekutsja={
+		name="Sándor Belitska"
+		portraits={
+			army={
+				large="gfx/leaders/HUN/Portrait_Hungary_Sandor_Belitska.dds"
+				small="gfx/advisors/HUN/Portrait_Hungary_Sandor_Belitska.dds"
+			}
+		}
+		corps_commander={
+			traits={  }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+	AUH_karoly_beregfy={
+		name="Károly Beregfy"
+		portraits={
+			army={
+				large="gfx/leaders/HUN/Portrait_Hungary_Karoly_Beregfy.dds"
+				small="gfx/advisors/HUN/Portrait_Hungary_Karoly_Beregfy.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_harsh }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	AUH_adolf_von_boog={
+		name="Adolf von Boog"
+		portraits={
+			army={
+				large="gfx/leaders/AUH/Portrait_Habsburg_Adolf_von_Boog.dds"
+				small="gfx/advisors/AUH/Portrait_Habsburg_Adolf_von_Boog.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
 }
