@@ -1,0 +1,374 @@
+﻿l_english:
+
+### Anarchism
+
+anarchism: "Anarchists"
+anarchism_noun: "Anarchism"
+anarchism_desc: "Anarchist Government"
+anarchism_acceptance: "Acceptance of Anarchist Diplomacy"
+anarchism_drift: "Anarchist Drift"
+
+anarchism_subtype: "Anarchism"
+anarchism_subtype_desc: "Anarchism is a revolutionary and radically decentralizing ideology that posits that all forms of power derived from the state is inherently tyrannical.\n\nAnarchists of a classically socialist persuasion generally believe that excessive social control and authority, even when held by a theoretically progressive organization, is counterproductive or even damaging to a cause which posits the power of the masses over the power of the bourgeoisie.\n\nOther forms of Anarchism usually agree with this sentiment, but may differ on who exactly they claim to be serving or why they reject state power."
+
+### Councilism / Trotskyism
+
+councilism: "Councilists"
+councilism_noun: "Councilism"
+councilism_desc: "Councilist Government"
+councilism_acceptance: "Acceptance of Councilist Diplomacy"
+councilism_drift: "Councilist Drift"
+
+councilism_subtype: "Councilism"
+councilism_subtype_desc: "Councilism is a major splinter ideology within Communist orthodoxy, representing the factions of the Bolsheviks and other Communists worldwide that have invariably denounced Stalin's interpretation of socialist governance and the implementation of Marxism-Leninism.\n\nCouncilists accuse more mainstream Communists of creating an undemocratic, opaque, and fundamentally hierarchical and cliqueist monster out of Marx's theories, and the manifestation of the 'degenerated worker's state' out of the Soviet Union, and loathe what they see as the loss of an opportunity to create a truly revolutionary world power.\n\nCouncilists are also usually supporters of Trotsky and his ideological innovations, which attempt to make Communism more democratic and less bureaucratic."
+
+### Agrarian Communism / Maoism
+
+agrarian_communism: "Agrarian Communists"
+agrarian_communism_noun: "Agrarian Communism"
+agrarian_communism_desc: "Agrarian Communist Government"
+agrarian_communism_acceptance: "Acceptance of Agrarian Communist Diplomacy"
+agrarian_communism_drift: "Agrarian Communist Drift"
+
+agrarian_communism_subtype: "Agrarian Communism"
+agrarian_communism_subtype_desc: "Agrarian Communism is a deviation within Marxism-Leninism that originated in China as Mao Zedong Thought, and has further developed primarily within the Third World, specifically in nations where revolutionary Marxism has appealed to anti-imperialist, anti-colonial, or anti-feudal agrarian populations.\n\nAgrarian Communists are characterized by their focus on revolutionary praxis rather than ideological orthodoxy, and have largely been keen adopters of new revolutionary military theories, such as Mass Line Theory and “People’s War”, while also being unique in their utilization of the agrarian peasantry as a revolutionary vanguard rather than the urban proletariat, and are often far more accepting of nationalism when it presents itself in a revolutionary context."
+
+### Totalism / Stalinism
+
+totalism: "Totalists"
+totalism_noun: "Totalism"
+totalism_desc: "Totalist Government"
+totalism_acceptance: "Acceptance of Totalist Diplomacy"
+totalism_drift: "Totalist Drift"
+
+totalism_subtype: "Totalism"
+totalism_subtype_desc: "Totalism is an ideological stance within Totalist Communism that originated as Stalinism, and officially refers to itself as 'Marxism-Leninism'. Totalism is ruthlessly developmental and claims that only by forming a powerful and self-sufficient industrialist economy can a World Revolution be achieved.\n\nBolshevists also posit that attempts to revise or adapt established Leninist political principles are inherently counter-revolutionary or even anti-socialist, and as such Totalists are almost always fervently opposed to Trotskyism, as well as any other socialist movement that attempts to do away with oppressive centralisation of power and bloody purges of opposition forces.\n\nBolshevists also tend to favor the development of personality cults surrounding their leaders, and do not shy away from exploiting more basal forms of national chauvinism."
+
+### Vanguardism
+
+vanguardism: "Vanguardists"
+vanguardism_noun: "Vanguardism"
+vanguardism_desc: "Vanguardist Government"
+vanguardism_acceptance: "Acceptance of Vanguardist Diplomacy"
+vanguardism_drift: "Vanguardist Drift"
+
+vanguardism_subtype: "Vanguardism"
+vanguardism_subtype_desc: "Vanguardism is a name given to various radical and totalitarian communist ideologies with similar characteristics. As an ideological front, Vanguardists promote a new direction for Communism in the world, emphasising the role of the socialist state as the primary driving force of the World Revolution, a state which is celebrated and which opposes all forms of counter-revolution, even those fifth columnists that masquerade as socialists.\n\nVanguardists look to heavily centralize and expand the power of their monolithic socialist state, and that the goal of this government is to construct socialism from above, as they believe the forces of counter-revolution are simply too strong for the will of the working class to triumph by itself.\n\nVanguardists also often make use of nationalistic and militaristic rhetoric and policies, and one would be forgiven for mistaking their grandiose military parades for the ones belonging to the old empires they seek to replace."
+
+### Communism
+
+communism: "Communists"
+communism_noun: "Communism"
+communism_desc: "Communist Government"
+communism_acceptance: "Acceptance of Communist Diplomacy"
+communism_drift: "Communist Drift"
+
+communism_subtype: "Communism"
+communism_subtype_desc: "Communism is a far-left sociopolitical, philosophical, and economic ideology within the socialist movement, whose goal is the creation of a communist society, a socioeconomic order centered around common ownership of the means of production, distribution, and exchange that allocates products to everyone in the society based on need. Communism ultimately ventures towards complete absence of private property and the elimination of social classes, and often also money and even the state.\n\nPractically speaking, Communists often disagree on the means to achieve this end are to be, some are more liberalizing, and others very stern authoritarians, some are internationalist, others anti-nationalist, and a few are even proudly nationalistic.\n\nIn this context, Communism is a general term referring to communistic political forces which are neither extreme nor liberal, an umbrella referring to groups that support communization, revolutionary militancy, and a primarily authoritarian approach to governance."
+
+### Socialism
+
+socialism: "Socialists"
+socialism_noun: "Socialism"
+socialism_desc: "Socialist Government"
+socialism_acceptance: "Acceptance of Socialist Diplomacy"
+socialism_drift: "Socialist Drift"
+
+socialism_subtype: "Socialism"
+socialism_subtype_desc: "Socialism is a vast political philosophy and movement encompassing a range of economic and social systems characterized by social ownership of the means of production, as opposed to private ownership. It describes the economic, political, and social theories and movements associated with the implementation of such systems.\n\nSocial ownership can take various forms including: public, community, collective, cooperative, or employee. No single definition encapsulates the many strands of the socialist worldview, but social ownership remains a unifying common element.\n\nTraditionally, Socialism is a left-wing ideology, although its many forms and inflections have presented forms of socialism that veer greatly towards centrism or even to the right, particularly when concerning social as opposed to economic issues."
+
+### Syndicalism
+
+syndicalism: "Syndicalists"
+syndicalism_noun: "Syndicalism"
+syndicalism_desc: "Syndicalist Government"
+syndicalism_acceptance: "Acceptance of Syndicalist Diplomacy"
+syndicalism_drift: "Syndicalist Drift"
+
+syndicalism_subtype: "Syndicalism"
+syndicalism_subtype_desc: " "
+
+### Radicalism
+
+radicalism: "Radicals"
+radicalism_noun: "Radicalism"
+radicalism_desc: "Radicalist Government"
+radicalism_acceptance: "Acceptance of Radicalist Diplomacy"
+radicalism_drift: "Radicalist Drift"
+
+radicalism_subtype: "Radicalism"
+radicalism_subtype_desc: "Left-Wing Radicalism is a unique and emerging ideological movement within Social Democratic thought, although borne out of the old Radicalism of the French Revolution, and carries a philosophy far more activist and energetic when it comes to achieving the ideals of an ethical and humanist market economy.\n\nRadicalists generally loathe moderate political positions as being too conservative and/or being part of the elitist strategy of delay and dissolution when it comes to enacting universal labour and human rights, while also discouraging the centrist social policy among Social Democrats as giving too much moral authority to reactionaries."
+
+### Progressivism
+
+progressivism: "Progressives"
+progressivism_noun: "Progressivism"
+progressivism_desc: "Progressive Government"
+progressivism_acceptance: "Acceptance of Progressive Diplomacy"
+progressivism_drift: "Progressive Drift"
+
+progressivism_subtype: "Progressivism"
+progressivism_subtype_desc: "Progressivism is an ideology whose goal is to reform capitalism and humanize it by aligning it with the ethical ideals of social welfare while maintaining the capitalist mode of production, rather than creating an alternative socialist economic system.\n\nOften having their political power base in the working classes of both urban and rural communities, Progressives are often socially liberal even though more socially conservative Social Democrat constituencies also exist, united under a Progressive umbrella into a generally centrist bloc when it comes to non-economic issues, and while usually promoting a heavily regulated market economy within a well-maintained democratic form of government, some more radical streams do exist."
+
+### Organicism
+
+organicism: "Organicists"
+organicism_noun: "Organicism"
+organicism_desc: "Organicist Government"
+organicism_acceptance: "Acceptance of Organicist Diplomacy"
+organicism_drift: "Organicist Drift"
+
+organicism_subtype: "Organicism"
+organicism_subtype_desc: " "
+
+### Agrarian Socialism
+
+agrarian_socialism: "Agrarian Socialists"
+agrarian_socialism_noun: "Agrarian Socialism"
+agrarian_socialism_desc: "Agrarian Socialist Government"
+agrarian_socialism_acceptance: "Acceptance of Agrarian Socialist Diplomacy"
+agrarian_socialism_drift: "Agrarian Socialist Drift"
+
+agrarian_socialism_subtype: "Agrarian Socialism"
+agrarian_socialism_subtype_desc: "Agrarian Socialism refers to radical agrarian and ruralist movements that have adopted a revolutionary or reformist form of socialism into their economic platform.\n\nOften allied to more conventional revolutionary movements, Agrarian Socialists maintain a strong focus on the farmer and their interests as opposed to the often more urban focus of classical Socialism."
+
+### Agrarian Populism
+
+agrarian_populism: "Agrarian Populists"
+agrarian_populism_noun: "Agrarian Populism"
+agrarian_populism_desc: "Agrarian Populist Government"
+agrarian_populism_acceptance: "Acceptance of Agrarian Populist Diplomacy"
+agrarian_populism_drift: "Agrarian Populist Drift"
+
+agrarian_populism_subtype: "Agrarian Populism"
+agrarian_populism_subtype_desc: "Agrarian Populism refers to populist movements led by farmers and their allies, which can range from rural conservatives, liberals, to urban trade unions.\n\nAgrarian Populism is opposed to laws and policies which are seen as exploiting the labor of farmers and other workers to profit far-away elites.\n\nAgrarian Populists often have an eclectic range of other tenets outside of their clientelist economic policies, and can have both socially liberal and strongly reactionary cultural orientations depending on which particular movement you consult."
+
+### Liberalism
+
+liberalism: "Liberals"
+liberalism_noun: "Liberalism"
+liberalism_desc: "Liberal Government"
+liberalism_acceptance: "Acceptance of Liberal Diplomacy"
+liberalism_drift: "Liberal Drift"
+
+liberalism_subtype: "Liberalism"
+liberalism_subtype_desc: "Liberalism represents many strands of the liberal democratic system, with their main characteristic being the paramouncy of the individual and their rights within society. Liberals usually profess various forms of capitalist economic models, which can span from those who support a largely unregulated free market, to those that prefer a rather heavily regulated social market."
+
+### Liberal Conservatism
+
+liberal_conservatism: "Liberal Conservatives"
+liberal_conservatism_noun: "Liberal Conservatism"
+liberal_conservatism_desc: "Liberal Conservative Government"
+liberal_conservatism_acceptance: "Acceptance of Liberal Conservative Diplomacy"
+liberal_conservatism_drift: "Liberal Conservative Drift"
+
+liberal_conservatism_subtype: "Liberal Conservatism"
+liberal_conservatism_subtype_desc: "Liberal Conservatism is a pragmatic school of thought within liberal democratic systems that sees the ability to be dynamic with social and economic issues as key to the long-term preservation of the established order.\n\nLiberal Conservatives believe that an uncompromising stance on the status quo is counter-productive, thus they embrace slow but steady change as a way to maintain and promote their cultural values to other sectors of the political spectrum."
+
+### Conservative Liberalism
+
+conservative_liberalism: "Conservative Liberals"
+conservative_liberalism_noun: "Conservative Liberalism"
+conservative_liberalism_desc: "Conservative Liberal Government"
+conservative_liberalism_acceptance: "Acceptance of Liberal Conservative Diplomacy"
+conservative_liberalism_drift: "Conservative Liberal Drift"
+
+conservative_liberalism_subtype: "Conservative Liberalism"
+conservative_liberalism_subtype_desc: "Conservative Liberalism refers to various positions within the liberal right. It usually refers to forms of economic liberalism, but also refers to national liberalism, and libertarian conservatives who believe a free society guarantees both the social and the political rights of its citizens."
+
+### Conservatism
+
+conservatism: "Conservatives"
+conservatism_noun: "Conservatism"
+conservatism_desc: "Conservative Government"
+conservatism_acceptance: "Acceptance of Conservative Diplomacy"
+conservatism_drift: "Conservative Drift"
+
+conservatism_subtype: "Conservatism"
+conservatism_subtype_desc: "Conservatism is a political ideology centered on preserving traditional beliefs, attitudes, and philosophy as well as the traditional power dynamic of society within the democratic system. Opposed to both radical and sometimes even moderate changes to the status quo, Conservatives want to keep society stable and in good order. Usually they promote a regulated market economy, although more economically liberal traditions within Conservatism are not unheard of."
+
+### Centrism
+
+centrism: "Centrists"
+centrism_noun: "Centrism"
+centrism_desc: "Centrist Government"
+centrism_acceptance: "Acceptance of Centrist Diplomacy"
+centrism_drift: "Centrist Drift"
+
+centrism_subtype: "Centrism"
+centrism_subtype_desc: "Centrism is a political outlook or position within democratic political systems involving acceptance or support of a balance of social equality and a degree of social hierarchy, while opposing political changes that would result in a significant shift of society strongly to the left or the right."
+
+### Paternalism
+
+paternalism: "Paternalists"
+paternalism_noun: "Paternalism"
+paternalism_desc: "Paternalist Government"
+paternalism_acceptance: "Acceptance of Paternalist Diplomacy"
+paternalism_drift: "Paternalist Drift"
+
+paternalism_subtype: "Paternalism"
+paternalism_subtype_desc: "Paternalism is a catch-all term for regimes built around the primacy of the state in forming society, and while this state may be officially dedicated to the preservation of democracy it does so only in a performative fashion.\n\nPaternalists often espouse the importance of unity when it comes to the building of a stable, prosperous, and civilized society, while focusing away from issues of economics and individual rights out of pragmatism.\n\nThus, Paternalists see the economy as a tool which can be used in various ways to protect and promote stability, and not as an ideological flashpoint, therefore they may find themselves often at opposing ends of their social and economic axes as often as they are found at the center."
+
+### Oligarchism
+
+oligarchism: "Oligarchs"
+oligarchism_noun: "Oligarchism"
+oligarchism_desc: "Oligarchic Government"
+oligarchism_acceptance: "Acceptance of Oligarchic Diplomacy"
+oligarchism_drift: "Oligarchic Drift"
+
+oligarchism_subtype: "Oligarchism"
+oligarchism_subtype_desc: "Oligarchy is a term describing a state of affairs where the political machinery of a society as captured by various cooperating or competing cliques of power, and is perhaps the oldest truly political system known to man.\n\nUnder an oligarchy, the currents of power are clasped under an opaque and distant gauntlet, where participation is allowed only for individuals loyal to the established order, yet where the social currents are left largely to their own devices. This is often out of neglect, but can also be an official policy of an oligarchic regime, so as to not disturb the masses out of their inactivity, much like how the oligarchs expect the masses not to disturb them."
+
+### Despotism
+
+despotism: "Despots"
+despotism_noun: "Despotism"
+despotism_desc: "Despotic Government"
+despotism_acceptance: "Acceptance of Despotic Diplomacy"
+despotism_drift: "Despotic Drift"
+
+despotism_subtype: "Despotism"
+despotism_subtype_desc: "Despotism is not a political ideology in the normal sense of the word, but rather a general term for the attitude that this kind of government holds towards its citizens: The people are all subjects of the leader, who may be an autocrat of many or a single color, and whose role and duty is to lead the state and its society towards the most righteous and best path while uniting the people under their benevolent protection."
+
+### Nationalism
+
+general_nationalism: "Nationalists"
+general_nationalism_noun: "Nationalism"
+general_nationalism_desc: "Nationalist Government"
+general_nationalism_acceptance: "Acceptance of Nationalist Diplomacy"
+general_nationalism_drift: "Nationalist Drift"
+
+general_nationalism_subtype: "Nationalism"
+general_nationalism_subtype_desc: "Nationalism is an idea and movement that holds that the nation should be congruent with the state. Nevertheless, it is an extremely broad scope term referring to systems of thought which posit national self-determination above all, and can come in many shapes or forms.\n\nIn this context, Nationalism refers to the patriotic center and moderate nationalism when it manifests in such a way where it is not more easily passed off as a different ideology."
+
+### Theocraticism
+
+fundamentalism: "Theocratics"
+fundamentalism_noun: "Theocraticism"
+fundamentalism_desc: "Theocratic Government"
+fundamentalism_acceptance: "Acceptance of Theocratic Diplomacy"
+fundamentalism_drift: "Theocratic Drift"
+
+fundamentalism_subtype: "Fundamentalism"
+fundamentalism_subtype_desc: "Fundamentalism refers to various ultra-religious and puritanical militant movements spread throughout the world that preach the radical implementation of socio-political aspects of their faith, and often support its expansion as well.\n\nThe Fundamentalist strictly and often conservatively interprets the dogmas of their religion, and also emphasize the importance of distinguishing their 'pure' in-group of followers and adherents from the 'corrupt' out-group of all ignorants, blasphemers, and modernists."
+clericalism_subtype: "Clericalism"
+clericalism_subtype_desc: "Clericalism is not necessarily an ideology, more a characterization of a political system that has been constructed or captured by hierarchical religious elements, usually forming a theocratic oligarchy, or at least a theonomic anocracy. The rulers of this system are often the clerics of their faith, and rule through a first-among-equals or under a more autocratic form of leadership."
+
+### Reactionism
+
+reactionism: "Reactionaries"
+reactionism_noun: "Reactionism"
+reactionism_desc: "Reactionary Government"
+reactionism_acceptance: "Acceptance of Reactionary Diplomacy"
+reactionism_drift: "Reactionary Drift"
+
+reactionism_subtype: "Reactionism"
+reactionism_subtype_desc: "Reactionism is a political philosophy centred on the promotion of traditionalist values in the implementation of politics. Reactionaries often preach nationalist values and faith-based ethics and appeal to the religious traditions of the people as a source of stability, while opposing other strains of radicalism.\n\nReactionaries generally oppose any changes to traditional society, unless said changes enhance the public position of their religion or culture, and usually advocate a mixed economy and an illiberal position on social issues."
+
+### Radical Traditionalism
+
+radical_traditionalism: "Radical Traditionalists"
+radical_traditionalism_noun: "Radical Traditionalism"
+radical_traditionalism_desc: "Radical Traditionalist Government"
+radical_traditionalism_acceptance: "Acceptance of Radical Traditionalist Diplomacy"
+radical_traditionalism_drift: "Radical Traditionalist Drift"
+
+radical_traditionalism_subtype: "Radical Traditionalism"
+radical_traditionalism_subtype_desc: "Radical Traditionalism is a catch-all term for radical reactionary movements whose doctrine is predominately centered around a return to a noble and pure past, imagined or not.\n\nRadical Traditionalists advocate for the wholesale reversal of the post-Enlightenment world order, and judge the ideas of humanism, liberalism, and individualism to be wholly opposed to the nature of a pure and harmonious society, or perhaps even against the nature of humanity itself.\n\nConsequently, Radical Traditionalism works either consciously or unconsciously for the return of absolutism, strict social order, impenetrable hierarchy, and the slavish indenturing of the masses to the rightful lords of their civilization."
+
+### Minarchism
+
+minarchism: "Minarchists"
+minarchism_noun: "Minarchism"
+minarchism_desc: "Minarchist Government"
+minarchism_acceptance: "Acceptance of Minarchist Diplomacy"
+minarchism_drift: "Minarchist Drift"
+
+minarchism_subtype: "Minarchism"
+minarchism_subtype_desc: "Minarchism is the ideology, or idealized lack thereof, of a minarchy, the night-watchman state: a model of state that is limited and minimal in function and form, that exists only to enforce law and order through police and courts, and defend society from aggressors through the military, with little to no functions outside these parameters.\n\nSupporters of this philosophy are called Minarchists, and justify the existence of their minimal state as a logical consequence of the non-aggression principle, which must be enforced to create an environment where citizens can interact with other civilly and without duress."
+
+### Corporatism
+
+corporatism: "Corporatists"
+corporatism_noun: "Corporatism"
+corporatism_desc: "Corporatist Government"
+corporatism_acceptance: "Acceptance of Corporatist Diplomacy"
+corporatism_drift: "Corporatist Drift"
+
+corporatism_subtype: "Corporatism"
+corporatism_subtype_desc: "Corporatism is a collectivist political ideology that developed as a 'Third Position' ideology at the same time as Fascism, and advocates for the organization of society by corporate groups, such as agricultural, labor, military, business, scientific, or even guild assocation, all on the basis of their common interests.\n\nAdopted by Fascism and other far-right authoritarians, Corporatism itself is still an extrinsic system of thought, and offers itself as an alternative to both capitalism and socialism, and many political parties have adopted the philosophy of Corporatism yet remained relatively moderate or unaligned in other areas, unlike the Fascists and National Socialists of today.\n\nCorporatism, however, is often confused for a corporatocracy, and while a corporatocracy may adopt tenets of Corporatism or be Corporatist itself, Corporatism alone does not refer to a political system dominated by large business interests."
+
+### Integralism
+
+integralism: "Integralists"
+integralism_noun: "Integralism"
+integralism_desc: "Integralist Government"
+integralism_acceptance: "Acceptance of Integralist Diplomacy"
+integralism_drift: "Integralist Drift"
+
+integralism_subtype: "Integralism"
+integralism_subtype_desc: "Integralism refers to the traditionalist authoritarian ethos originally constructed upon the principles of religious social teaching, but which has broadened in both scope of ideas and supporters since the end of the Great War.\n\nOriginally a highly conservative movement, numerous conferences of Integralist thinkers have developed the ideology into a catch-all for eclectic yet-not-conservative traditionalists, agitators who wish to bring the past back, not necessarily conserve what currently is. Integralism is also notable for its support for decentralization despite its authoritarian character of government, and also often advocates for disparate economic philosophies depending on the situation on the ground, many Integralists support corporatism; others national syndicalism; and some even medievalism, although politically, the Integralist usually supports political systems that existed in the past, especially republics dominated by an idealized elite."
+
+### Ultranationalism
+
+ultranationalism: "Ultranationalists"
+ultranationalism_noun: "Ultranationalism"
+ultranationalism_desc: "Ultranationalist Government"
+ultranationalism_acceptance: "Acceptance of Ultranationalist Diplomacy"
+ultranationalism_drift: "Ultranationalist Drift"
+
+ultranationalism_subtype: "Ultranationalism"
+ultranationalism_subtype_desc: "Ultranationalism is a broad and often vague ideological inclination that is united by its focus on fervent devotion to the nation above all else. Ultranationalists keenly hunt and cast out foreign influences - both real and perceived - and seek to make safe their society and culture from outsiders.\n\nUltranationalists thus favor the development of a strict and xenophobic martial culture with heavy military involvement in civilian affairs, and an often opaque and highly stratified approach to governance."
+national_socialism_subtype: "National Socialism"
+national_socialism_subtype_desc: "National Socialism is considered by many to be a peculiar evolution of Fascism, one which replaces devotion to the State with devotion to the Race, while only enhancing Fascism's totalitarian tendencies.\n\nNational Socialism values above all the exaltation of a fierce ethnic nationalism, while incorporating anti-communism, anti-liberalism, eugenics, and scientific racism into its creed, and intending to overcome all social divisions through the creation of a homogenous and militaristic society based on racial purity."
+fascism_subtype: "Fascism"
+fascism_subtype_desc: "Fascism is a radical ideology with origins rooted in a fusion of revolutionary syndicalism, socialism, and palingenetic ultranationalism.\n\nFascists - through the doctrine of palingenesis - believe in the necessity of a totalitarian rebirth in order to realize their collective national destiny, a rebirth which will wholly reshape their national culture in the image of Fascism, incorporating martial discipline, mass history, strict regimentation, and the idea of perpetual energy through violence into both public and private life.\n\nConsequently, Fascists typically venerate devotion to the State and a strong leader, who is justified in the deployment of violence against supposed enemies of the national rebirth."
+racialism_subtype: "Racialism"
+racialism_subtype_desc: "Racialism describes a series of radically nationalist ideologies that center themselves around the idea of Race as a critical component of national identity, an idea which unites what may be extremely divergent and disparate belief systems into a relatively coherent whole.\n\nRacialist economic models may differ greatly, and even the character of the state is eclectic, which depends on what specific Racialist theory you consult. Yet all agree that the preservation of the race is of the utmost importance, and that a pure, purified, or untimely mighty race is the ideal end-goal of their ideology."
+accelerationism_subtype: "Accelerationism"
+accelerationism_subtype_desc: "Accelerationism is the ultimate rejection of conventional politics, they simultaneously believe in both everything and nothing, and whose tenets are often intentionally eclectic and schizophrenic. The Accelerationist embraces violence and chaos in nearly all their forms, and is wholly and lucidly intent on driving the world mad with no reservation or restriction placed on the means by which their objectives should be accomplished."
+
+### National Syndicalism
+
+national_syndicalism: "National Syndicalists"
+national_syndicalism_noun: "National Syndicalism"
+national_syndicalism_desc: "National Syndicalist Government"
+national_syndicalism_acceptance: "Acceptance of National Syndicalist Diplomacy"
+national_syndicalism_drift: "National Syndicalist Drift"
+
+national_syndicalism_subtype: "National Syndicalism"
+national_syndicalism_subtype_desc: "National Syndicalism is a far-right adaptation of the originally far-left revolutionary syndicalism that is more closely modelled on the goals of integral nationalism.\n\nNational Syndicalists thus venerate the unity of the nation and the unity of their class, and often pursue class collaboration and corporatistic economic theory as opposed to revolutionary class warfare, and may even permit the existence of a class of business owners.\n\nNevertheless, National Syndicalism - despite its often reactionary social orientations - is very much still an economically egalitarian ideology, and aims to distribute economic decision-making power towards the working classes, even if such power may be partially shared with the bourgeois."
+
+### National Collectivism
+
+national_collectivism: "National Collectivists"
+national_collectivism_noun: "National Collectivism"
+national_collectivism_desc: "National Collectivist Government"
+national_collectivism_acceptance: "Acceptance of National Collectivist Diplomacy"
+national_collectivism_drift: "National Collectivist Drift"
+
+national_collectivism_subtype: "National Collectivism"
+national_collectivism_subtype_desc: "National Collectivism refers to the idiosyncratic synthesis of ethnic or even racial ultranationalism with far-left economic collectivism.\n\nOften also referred to as Strasserism or National Bolshevism depending on the national origin of its proponents, National Collectivism posits itself as the penultimate revolutionary ideology, one which fuses the interests of both the class and the nation in their battle for survival against the 'rootless cosmopolitans' of both global capitalism and internationalist socialism."
+
+### Occultism
+
+occultism: "Occultists"
+occultism_noun: "Occultism"
+occultism_desc: "Occult Government"
+occultism_acceptance: "Acceptance of Occultist Diplomacy"
+occultism_drift: "Occultist Drift"
+
+occultism_subtype: "Occultism"
+occultism_subtype_desc: "Occultism is an eclectic yet fundamentally anti-democratic, anti-egalitarian, and above all hyper-reactionary philosophical and political movement.\n\nThe political Occultist rejects modernism and contemporary ideas in nearly all their forms, and ultimately desires the creation of a society where practices and institutions from an idealized previous epoch of esoteric enlightenment are restored.\n\nThe means by which this restoration is achieved however, vary from believer to believer. Some are ardent pacifists, and work towards their neo-reactionary paradise through peaceful means, while others can be fanatical militarists, committed to spreading their vision by any means necessary."
+
+### Monarchism
+
+monarchism: "Monarchism"
+monarchism_noun: "Monarchism"
+monarchism_desc: "Monarchist Government"
+monarchism_acceptance: "Acceptance of Monarchist Diplomacy"
+monarchism_drift: "Monarchist Drift"
+
+monarchism_subtype: "Monarchy"
+monarchism_subtype_desc: "Monarchists seek to put at the head of the country a noble dynasty with a natural right to own the country, which will wisely govern its people for many generations."

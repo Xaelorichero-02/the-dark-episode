@@ -1,0 +1,26 @@
+state={
+	id=963
+	name="STATE_963"
+
+	history={
+		victory_points = {
+			6940 3 
+		}
+		owner = BOS
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = BOS
+		add_core_of = CRO
+
+	}
+
+	provinces={
+		13302 
+	}
+	manpower=3013
+	state_category=enclave
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

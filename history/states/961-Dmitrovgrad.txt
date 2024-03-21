@@ -1,0 +1,26 @@
+state={
+	id=961
+	name="STATE_961"
+
+	history={
+		owner = BUL
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			13336 1 
+		}
+		add_core_of = SER
+		add_core_of = BUL
+
+	}
+
+	provinces={
+		13336 
+	}
+	manpower=7276
+	state_category=enclave
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

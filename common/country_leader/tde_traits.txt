@@ -1,0 +1,49 @@
+leader_traits = {
+
+	oligarch = {
+		random = no
+		sprite = 13
+		oligarchism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	inventive_genius = {
+		random = no
+
+		political_power_gain = 0.05
+		opinion_gain_monthly_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	anti_partisan_advocate = {
+		random = no
+
+		centism_drift = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	moderate_diplomat = {
+		random = no
+
+		opinion_gain_monthly_same_ideology_factor = 0.25
+		paternalism_acceptance = 50
+		monarchism_acceptance = 50
+		integralism_acceptance = 50
+		despotism_acceptance = 50
+		oligarchism_acceptance = 50
+		centrism_acceptance = 50
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -52,6 +52,17 @@ on_actions = {
 					set_province_name = { id = 3483 name = "Ternopol" }
 				}
 				else = {
+					limit = {
+						has_global_flag = endonyms
+						91 = {
+							is_controlled_by = ISR
+						}
+					}
+					91 = { set_state_name = "Lemberik" }
+					set_province_name = { id = 11479 name = "Lemberik" }
+					set_province_name = { id = 3483 name = "Tarnapol" }
+				}
+				else = {
 					91 = { set_state_name = "Lviv" }
 					set_province_name = { id = 11479 name = "Lviv" }
 					set_province_name = { id = 3483 name = "Ternopil" }
@@ -205,11 +216,105 @@ on_actions = {
 					set_province_name = { id = 9833 name = "Qostantaniye" }
 				}
 				else = {
-					limit = {
-						has_global_flag = endonyms
-					}
 					797 = { set_state_name = "Istanbul" }
 					set_province_name = { id = 9833 name = "Istanbul" }
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = endonyms
+					28 = {
+						OR = {
+							is_controlled_by = GER
+							is_controlled_by = AUH
+							is_controlled_by = AUS
+							is_controlled_by = BAY
+							is_controlled_by = PRE
+							is_controlled_by = SAX
+							is_controlled_by = MEK
+							is_controlled_by = WUR
+							is_controlled_by = SHL
+							is_controlled_by = DNZ
+						}
+					}
+				}
+				28 = { set_state_name = "Elsass-Lothringen" }
+				set_province_name = { id = 549 name = "Hagenau" }
+				set_province_name = { id = 9503 name = "Strassburg" }
+				set_province_name = { id = 6529 name = "Kolmar" }
+				set_province_name = { id = 678 name = "Mülhausen" }
+				else = {
+					28 = { set_state_name = "Alsace-Lorraine" }
+					set_province_name = { id = 549 name = "Haguenau" }
+					set_province_name = { id = 9503 name = "Strasbourg" }
+					set_province_name = { id = 6529 name = "Colmar" }
+					set_province_name = { id = 678 name = "Mulhouse" }
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = endonyms
+					88 = {
+						OR = {
+							is_controlled_by = GER
+							is_controlled_by = AUH
+							is_controlled_by = AUS
+							is_controlled_by = BAY
+							is_controlled_by = PRE
+							is_controlled_by = SAX
+							is_controlled_by = MEK
+							is_controlled_by = WUR
+							is_controlled_by = SHL
+							is_controlled_by = DNZ
+						}
+					}
+				}
+				88 = { set_state_name = "Krakau" }
+				set_province_name = { id = 9427 name = "Krakau" }
+				else = {
+					limit = {
+						has_global_flag = endonyms
+						88 = {
+							OR = {
+								is_controlled_by = POL
+								is_controlled_by = KSH
+								is_controlled_by = GAL
+							}
+						}
+					}
+					88 = { set_state_name = "Kraków" }
+					set_province_name = { id = 9427 name = "Kraków" }
+				}
+				else = {
+					limit = {
+						has_global_flag = endonyms
+						88 = {
+							is_controlled_by = PAP
+						}
+					}
+					88 = { set_state_name = "Cracouiensis" }
+					set_province_name = { id = 9427 name = "Cracouiensis" }
+					set_province_name = { id = 9494 name = "Zamoscia" }
+				}
+				else = {
+					limit = {
+						has_global_flag = endonyms
+						88 = {
+							is_controlled_by = ISR
+						}
+					}
+					88 = { set_state_name = "Krakov" }
+					set_province_name = { id = 9427 name = "Krakov" }
+					set_province_name = { id = 9494 name = "Zamoshtsh" }
+				}
+				else = {
+					88 = { set_state_name = "Cracow" }
+					set_province_name = { id = 9427 name = "Cracow" }
+					set_province_name = { id = 9494 name = "Zamość" }
 				}
 			}
 		}

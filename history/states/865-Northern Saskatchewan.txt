@@ -7,9 +7,10 @@ state={
 	history = {
 		owner = CAN
 		add_core_of = CAN
+		add_core_of = INU
 	}
 	manpower=65605
-	state_category = pastoral
+	state_category = wasteland
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

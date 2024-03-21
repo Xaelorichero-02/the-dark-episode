@@ -1,447 +1,856 @@
+#Dskod1 (Dylan) now claims this file in the name of the AI... may the AI empire forever expan
+#All ideologies have been clumped into 3 groups for the AI. No one will ever see these, so we are hijacking them for our own purposes. The three AI groups are Democracy, Facist, and Communist
+#there is a 4th ai group called neutral, but that works differently.
+
+#hey guys my name is tex and i made the subideologies
+
+#Note: Because of hard coded features, democracies now use the fascist AI and the ol fascists use the neutral AI
+#Note: AI changed back to all neutral ai. This is because the other AI doesn't want to be apart of things if the tension is so low (IE at game start)
+
 ideologies = {
-
-	market_liberal = {
-
+	
+	### Broad group of the crazies™ that are mostly introspective or isolationist. This includes funi clock man in Russia as well as other occult groups that are not XK-class world enders.
+	
+	occultism = {
 		types = {
-			oligarchism = {
-			}
+			occultism_subtype = {}
 		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_DEMOCRATIC_1"
-			"FACTION_NAME_DEMOCRATIC_2"
-			"FACTION_NAME_DEMOCRATIC_3"
-			"FACTION_NAME_DEMOCRATIC_4"
-			"FACTION_NAME_DEMOCRATIC_5"
-			"FACTION_NAME_DEMOCRATIC_6"
-		}
-
-		color = { 245 217 0 }
-
+		dynamic_faction_names = {}
+		color = { 70 60 105 }
 		rules = {
 			can_create_collaboration_government = no
-			can_declare_war_on_same_ideology = no
-			can_force_government = yes
-			can_send_volunteers = no
+			can_force_government = no
 			can_puppet = no
-			can_lower_tension = yes
-			can_only_justify_war_on_threat_country = yes
-			can_guarantee_other_ideologies = yes
-		}
-
-		can_host_government_in_exile = yes
-
-		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
-		faction_impact_on_world_tension = 0.1
-
-		modifiers = {
-			generate_wargoal_tension = 1.00
-			join_faction_tension = 0.80
-			lend_lease_tension = 0.50
-			send_volunteers_tension = 0.50
-			guarantee_tension = 0.25
-			# annex_cost_factor = 0.5 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 20.0
-			airforce_intel_to_others = 5
-			embargo_cost_factor = -0.5
-			embargo_threshold_factor = -0.5
-		}
-
-		faction_modifiers = {
-			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
-		}
-		ai_democratic = yes # uses the democratic AI behaviour
-		ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
-	}
-
-	social_liberal = {
-
-		types = {
-			liberalism = {
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_DEMOCRATIC_1"
-			"FACTION_NAME_DEMOCRATIC_2"
-			"FACTION_NAME_DEMOCRATIC_3"
-			"FACTION_NAME_DEMOCRATIC_4"
-			"FACTION_NAME_DEMOCRATIC_5"
-			"FACTION_NAME_DEMOCRATIC_6"
-		}
-
-		color = { 0 80 168 }
-
-		rules = {
-			can_create_collaboration_government = no
-			can_declare_war_on_same_ideology = no
-			can_force_government = yes
-			can_send_volunteers = no
-			can_puppet = no
-			can_lower_tension = yes
-			can_only_justify_war_on_threat_country = yes
-			can_guarantee_other_ideologies = yes
-		}
-
-		can_host_government_in_exile = yes
-
-		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
-		faction_impact_on_world_tension = 0.1
-
-		modifiers = {
-			generate_wargoal_tension = 1.00
-			join_faction_tension = 0.80
-			lend_lease_tension = 0.50
-			send_volunteers_tension = 0.50
-			guarantee_tension = 0.25
-			# annex_cost_factor = 0.5 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 20.0
-			airforce_intel_to_others = 5
-			embargo_cost_factor = -0.5
-			embargo_threshold_factor = -0.5
-		}
-
-		faction_modifiers = {
-			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
-		}
-		ai_democratic = yes # uses the democratic AI behaviour
-		ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
-	}
-
-	democratic = {
-
-		types = {
-			conservatism = {
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_DEMOCRATIC_1"
-			"FACTION_NAME_DEMOCRATIC_2"
-			"FACTION_NAME_DEMOCRATIC_3"
-			"FACTION_NAME_DEMOCRATIC_4"
-			"FACTION_NAME_DEMOCRATIC_5"
-			"FACTION_NAME_DEMOCRATIC_6"
-		}
-
-		color = { 0 0 230 }
-
-		rules = {
-			can_create_collaboration_government = no
-			can_declare_war_on_same_ideology = no
-			can_force_government = yes
-			can_send_volunteers = no
-			can_puppet = no
-			can_lower_tension = yes
-			can_only_justify_war_on_threat_country = yes
-			can_guarantee_other_ideologies = yes
-		}
-
-		can_host_government_in_exile = yes
-
-		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
-		faction_impact_on_world_tension = 0.1
-
-		modifiers = {
-			generate_wargoal_tension = 1.00
-			join_faction_tension = 0.80
-			lend_lease_tension = 0.50
-			send_volunteers_tension = 0.50
-			guarantee_tension = 0.25
-			# annex_cost_factor = 0.5 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 20.0
-			airforce_intel_to_others = 5
-			embargo_cost_factor = -0.5
-			embargo_threshold_factor = -0.5
-		}
-
-		faction_modifiers = {
-			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
-		}
-		ai_democratic = yes # uses the democratic AI behaviour
-		ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
-	}
-
-	social_democrat = {
-
-		types = {
-			socialism = {
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_DEMOCRATIC_1"
-			"FACTION_NAME_DEMOCRATIC_2"
-			"FACTION_NAME_DEMOCRATIC_3"
-			"FACTION_NAME_DEMOCRATIC_4"
-			"FACTION_NAME_DEMOCRATIC_5"
-			"FACTION_NAME_DEMOCRATIC_6"
-		}
-
-		color = { 194 30 86 }
-
-		rules = {
-			can_create_collaboration_government = no
-			can_declare_war_on_same_ideology = no
-			can_force_government = yes
-			can_send_volunteers = no
-			can_puppet = no
-			can_lower_tension = yes
-			can_only_justify_war_on_threat_country = yes
-			can_guarantee_other_ideologies = yes
-		}
-
-		can_host_government_in_exile = yes
-
-		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
-		faction_impact_on_world_tension = 0.1
-
-		modifiers = {
-			generate_wargoal_tension = 1.00
-			join_faction_tension = 0.80
-			lend_lease_tension = 0.50
-			send_volunteers_tension = 0.50
-			guarantee_tension = 0.25
-			# annex_cost_factor = 0.5 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 20.0
-			airforce_intel_to_others = 5
-			embargo_cost_factor = -0.5
-			embargo_threshold_factor = -0.5
-		}
-
-		faction_modifiers = {
-			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
-		}
-		ai_democratic = yes # uses the democratic AI behaviour
-		ai_ideology_wanted_units_factor = 1.10 # multiplies threat impact on number of desired units by this value, defaults to 1.0. If at war, the larger of this value and NDefines::NAI::WANTED_UNITS_WAR_THREAT_FACTOR will be used instead
-	}
-
-	syndicalist = {
-
-		types = {
-			marxism = {
-			}
-		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_COMMUNIST_1"
-			"FACTION_NAME_COMMUNIST_2"
-			"FACTION_NAME_COMMUNIST_3"
-			"FACTION_NAME_COMMUNIST_4"
-			"FACTION_NAME_COMMUNIST_5"
-		}
-
-		color = { 244 90 90 }
-
-		war_impact_on_world_tension = 0.75		#Commie less threatening
-		faction_impact_on_world_tension = 0.5
-
-		ai_communist = yes # uses the commie AI behaviour
-		ai_ideology_wanted_units_factor = 1.20
-
-		rules = {
-			can_force_government = yes
+			can_join_factions = no
 			can_send_volunteers = yes
-			can_puppet = yes
 		}
-
-		can_collaborate = yes
-
 		modifiers = {
-			# puppet_cost_factor = -0.3 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
-			civilian_intel_to_others = 10.0
-			army_intel_to_others = 7.5
-			navy_intel_to_others = 12.5
-			airforce_intel_to_others = 7.5
-			hidden_modifier = { join_faction_tension = -0.1 }
-			embargo_threshold_factor = 0.5
-			lend_lease_tension = 0.50
+			hidden_modifier = {
+				civilian_intel_to_others = 5.0
+				army_intel_to_others = 5.0
+				navy_intel_to_others = 5.0
+				airforce_intel_to_others = 5.0
+			}
 		}
-
-		faction_modifiers = {
-
-		}
-
+		ai_neutral = yes
+		can_be_boosted = no
 	}
+	
+	### Broad group of syncretic totalitarians encompassing the ideologies of National Bolshevists, Strasserists, and Serovites.
 
-	communism = {
-
+	national_collectivism = {
 		types = {
-
-			leninism = {
-			}
-
-			stalinism = {
-			}
-
-			anti_revisionism = {
-			}
-
-			anarchist_communism = {
-			}
+			national_collectivism_subtype = {}
 		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_COMMUNIST_1"
-			"FACTION_NAME_COMMUNIST_2"
-			"FACTION_NAME_COMMUNIST_3"
-			"FACTION_NAME_COMMUNIST_4"
-			"FACTION_NAME_COMMUNIST_5"
-		}
-
-		color = { 255 0 0 }
-
-		war_impact_on_world_tension = 0.75		#Commie less threatening
-		faction_impact_on_world_tension = 0.5
-
-		ai_communist = yes # uses the commie AI behaviour
-		ai_ideology_wanted_units_factor = 1.20
-
+		dynamic_faction_names = {}
+		color = { 130 45 60 }
 		rules = {
-			can_force_government = yes
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
 			can_send_volunteers = yes
-			can_puppet = yes
 		}
-
-		can_collaborate = yes
-
 		modifiers = {
-			# puppet_cost_factor = -0.3 # Deprecated, use common\peace_conference\00_generic_peace.txt instead
-			civilian_intel_to_others = 10.0
-			army_intel_to_others = 7.5
-			navy_intel_to_others = 12.5
-			airforce_intel_to_others = 7.5
-			hidden_modifier = { join_faction_tension = -0.1 }
-			embargo_threshold_factor = 0.5
-			lend_lease_tension = 0.50
+			hidden_modifier = {
+				civilian_intel_to_others = 15.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 10.0
+				airforce_intel_to_others = 10.0
+			}
 		}
-
-		faction_modifiers = {
-
-		}
-
+		ai_neutral = yes
 	}
+	
+	### Broad group of syncretic authoritarians encompassing the ideologies of National Syndicalists, Monarcho-Socialists, Falangists, as well as Proudhon, and Sorel.
 
-	fascism = {
-
+	national_syndicalism = {
 		types = {
-
-			nazism = {
-			}
-
-			gen_nazism = {
-			}
-
-			fascism_ideology = {
-			}
-
-			falangism = {
-			}
-
-			rexism = {
-			}
+			national_syndicalism_subtype = {}
 		}
-
-		dynamic_faction_names = {
-			"FACTION_NAME_FASCIST_1"
-			"FACTION_NAME_FASCIST_2"
-			"FACTION_NAME_FASCIST_3"
-			"FACTION_NAME_FASCIST_4"
-			"FACTION_NAME_FASCIST_5"
-		}
-
-		color = { 150 75 0 }
-
-		war_impact_on_world_tension = 1.0			#evil!
-		faction_impact_on_world_tension = 1.0
-
+		dynamic_faction_names = {}
+		color = { 175 70 80 }
 		rules = {
-			can_force_government = yes
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
 			can_send_volunteers = yes
-			can_puppet = yes
 		}
-
-		can_collaborate = yes
-
 		modifiers = {
-			justify_war_goal_when_in_major_war_time = -0.80
-			civilian_intel_to_others = 15.0
-			army_intel_to_others = 10.0
-			navy_intel_to_others = 10.0
-			airforce_intel_to_others = 10.0
-			hidden_modifier = { join_faction_tension = -0.1 }
-			embargo_cost_factor = 1
-			lend_lease_tension = 0.50
+			hidden_modifier = {
+				civilian_intel_to_others = 15.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 10.0
+				airforce_intel_to_others = 10.0
+			}
 		}
+		ai_neutral = yes
+	}
+	
+	### Fascism, the controversial grandfather of nearly all modern nationalist thought, whether its descendants want to acknowledge it or not. In this case it refers specifically to Classical Fascist regimes, or regimes directly inspired by Italian Fascism, such as the Revolutionary British Fascism of Mosley.
 
-		ai_fascist = yes # uses the fascist AI behaviour
-		ai_ideology_wanted_units_factor = 1.65
+	ultranationalism = {
+		types = {
+			fascism_subtype = {}
+			ultranationalism_subtype = {}
+			accelerationism_subtype = {}
+			racialism_subtype = {}
+			national_socialism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 185 95 55 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 15.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 10.0
+				airforce_intel_to_others = 10.0
+			}
+		}
+		ai_fascist = yes
 	}
 
-	neutrality = {
+	### Monarchism covers those who like AlexTheRambler! That's self explanatory.
 
+	monarchism = {
 		types = {
-
-			despotism  = {
-			}
-
-			anarchism = {
-				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
-			}
-
-			moderatism = {
-			}
-
-			centrism = {
-			}
+			monarchism_subtype = {}
 		}
-
+		color = { 120 15 80 }
 		dynamic_faction_names = {
 			"FACTION_NAME_NONALIGNED_1"
-			"FACTION_NAME_NONALIGNED_2"
+			"FACTION_NAME_DEMOCRATIC_2"
 			"FACTION_NAME_NONALIGNED_3"
-			"FACTION_NAME_NONALIGNED_4"
-			"FACTION_NAME_NONALIGNED_5"
+			"FACTION_NAME_DEMOCRATIC_3"
+			"FACTION_NAME_DEMOCRATIC_5"
 		}
-
-		color = { 124 124 124 }
-
-
-		war_impact_on_world_tension = 0.25		#no major danger
-		faction_impact_on_world_tension = 0.1
-
+		war_impact_on_world_tension = 0.75
+		faction_impact_on_world_tension = 0.5
 		rules = {
 			can_force_government = yes
 			can_puppet = yes
-			can_send_volunteers = no
+			can_send_volunteers = yes
+			can_guarantee_other_ideologies = yes
+			can_lower_tension = yes
 		}
-
-		modifiers = {
-			#increased_influence_factor = 0.3 #30% easier to influence
-			generate_wargoal_tension = 0.5
-			join_faction_tension = 0.4
-			lend_lease_tension = 0.6
-			send_volunteers_tension = 0.4
-			guarantee_tension = 0.4
-			drift_defence_factor = -0.3
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 10.0
-			navy_intel_to_others = 20.0
-			airforce_intel_to_others = 10.0
-		}
-
 		faction_modifiers = {
 		}
+		ai_neutral = yes
+		ai_ideology_wanted_units_factor = 2.0
+	}
+	
+	### Integralism covers those that are particularly reactionary socialists, integral nationalists, and multiracialist fascists.
 
-		ai_neutral = yes #
-		ai_ideology_wanted_units_factor = 1.15
+	integralism = {
+		types = {
+			integralism_subtype = {}
+			radical_traditionalism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 185 125 30 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 15.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 10.0
+				airforce_intel_to_others = 10.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### Vague mix of authoritarian conservatives, corporativists, and corporatocrats. What distinguishes them from Reactionists is that they may not be traditionalist or potentially not even conservative, and broadly speaking are more friendly to Fascism, even though they are not Fascist themselves. 
+
+	corporatism = {
+		types = {
+			corporatism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 215 160 75 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 15.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 10.0
+				airforce_intel_to_others = 10.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### Broad group of the libertarian right, such as libertarian nationalists, anarcho-capitalists, and minarchists.
+
+	minarchism = {
+		types = {
+			minarchism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 255 205 65 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 10.0
+				army_intel_to_others = 15.0
+				navy_intel_to_others = 15.0
+				airforce_intel_to_others = 15.0
+			}
+		}
+		ai_neutral = yes
+		can_be_boosted = no
+	}
+	
+	### Reactionary thought is a very broad group of ideologies that long for the 'old days', or have a particular disdain for modernism and the cultural or social developments of the new age. Typically more moderate than RadTrads, but more authoritarian than democratic conservatives.
+	
+	reactionism = {
+		types = {
+			reactionism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 150 50 155 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 5.0
+				army_intel_to_others = 5.0
+				navy_intel_to_others = 5.0
+				airforce_intel_to_others = 5.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### Religious regimes, represents all religions theoretically, but is Islamist-flavoured as Christian and Eastern religions are already well-represented by Reactionism and Radical Traditionalism.
+
+	fundamentalism = {
+		types = {
+			fundamentalism_subtype = {}
+			clericalism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 15 105 80 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 10.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 10.0
+				airforce_intel_to_others = 10.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### General Nationalism, or just Nationalism, refers to various independent and often non-aligned nationalistic movements, who may veer to either the left or right.
+	
+	general_nationalism = {
+		types = {
+			general_nationalism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 60 60 60 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 10.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 10.0
+				airforce_intel_to_others = 10.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### Despotism refers to largely non-ideological authoritarian regimes that feature personality cults or an autocratic clique that sits at the top and has largely vanquished rivals to its power.
+	
+	despotism = {
+		types = {
+			despotism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 90 90 90 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 10.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 10.0
+				airforce_intel_to_others = 10.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### Oligarchism refers to largely non-ideological authoritarian regimes that feature different factions and cliques, who are either vying for power or cooperating to mutually secure their lofty positions.
+
+	oligarchism =  {
+		types = {
+			oligarchism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 130 130 130 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 15.0
+				army_intel_to_others = 15.0
+				navy_intel_to_others = 15.0
+				airforce_intel_to_others = 15.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### Paternalism refers to authoritarian regimes that still maintain a degree of participation of the public in their governance. This can refer to authoritarian governments that are democratising, or democratic governments that are backsliding. It may also refer to moderate forces in otherwise highly ideological regimes.
+
+	paternalism = {
+		types = {
+			paternalism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 175 175 175 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 15.0
+				airforce_intel_to_others = 10.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### Centrism here refers to democratic governments that are either non-aligned, or ironically aligned with non-democratic powers.
+
+	centrism = {
+		types = {
+			centrism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 215 215 215 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 15.0
+				airforce_intel_to_others = 10.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### Conservatism refers to democratic forces that favour the preservation of the status-quo. These may be arch-reactionaries that still believe in the democratic process, or moderates who seek to reform the status-quo but maintain traditional values.
+
+	conservatism = {
+		types = {
+			conservatism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 35 35 135 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 20.0
+				airforce_intel_to_others = 10.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### Conservatives and right-wing liberals that are all about Freedom. This includes market liberals, classical liberals, national liberals, and neoconservatives.
+
+	conservative_liberalism = {
+		types = {
+			conservative_liberalism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 55 65 150 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 20.0
+				airforce_intel_to_others = 10.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### Functionally refers to moderate conservatives and moderate liberals, but also useful for representing centrists that are aligned to the democratic powers. Probably the most inoffensive ideology to ever exist, which also makes it the most despicable ideology to ever exist.
+
+	liberal_conservatism = {
+		types = {
+			liberal_conservatism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 80 90 190 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 20.0
+				airforce_intel_to_others = 10.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### heckin grima wormtongue libtards xddd
+
+	liberalism = {
+		types = {
+			liberalism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 110 125 230 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 20.0
+				airforce_intel_to_others = 10.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### Represents a broad range of agrarian movements, from the agrarian centre-left to folkish conservative populists.
+
+	agrarian_populism = {
+		types = {
+			agrarian_populism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 50 180 60 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 20.0
+				airforce_intel_to_others = 10.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### Represents openly left-wing or socialist agrarian/peasant movements.
+
+	agrarian_socialism = {
+		types = {
+			agrarian_socialism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 40 140 60 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 20.0
+				airforce_intel_to_others = 10.0
+			}
+		}
+		ai_neutral = yes
+	}
+
+	### Represents organic-patriotic, eco-nationalist, and folkish nationalist currents. Social positioning is ambivalent and can either be progressive or conservative, and can also represent decentralising ruralistic traditionalists and to some extent Valkists.
+
+	organicism = {
+		types = {
+			organicism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 35 80 45 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 20.0
+				airforce_intel_to_others = 10.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### Represents the traditional centre-left to left of progressive and social democratic movements.
+
+	progressivism = {
+		types = {
+			progressivism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 230 90 150 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 20.0
+				airforce_intel_to_others = 10.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### Vague ideology representing radical progressivism and radical republicanism.
+
+	radicalism = {
+		types = {
+			radicalism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 200 45 110 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 20.0
+				airforce_intel_to_others = 10.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### Represents both Kaiserreich-style Syndicalists as well as other militant trade unionist or radical laborist movements.
+
+	syndicalism = {
+		types = {
+			syndicalism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 165 35 90 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 20.0
+				airforce_intel_to_others = 10.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### Broad front of radical left and socialist movements, that can represent both authoritarian or democratic yet non-communist socialism.
+	
+	socialism = {
+		types = {
+			socialism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 245 45 65 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				ai_get_ally_desire_factor = -500
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 15.0
+				navy_intel_to_others = 15.0
+				airforce_intel_to_others = 15.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### Generic communists that are not particularly unique.
+	
+	communism = {
+		types = {
+			communism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 195 0 10 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 10.0
+				army_intel_to_others = 15.0
+				navy_intel_to_others = 15.0
+				airforce_intel_to_others = 15.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### Represents stratocratic and securocratic Communists, as well as unaligned totalitarian communists and communist-flavoured despots.
+	
+	vanguardism = {
+		types = {
+			vanguardism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 140 0 10 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 10.0
+				army_intel_to_others = 15.0
+				navy_intel_to_others = 15.0
+				airforce_intel_to_others = 15.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### Industrialist Communists as well as Stalinism proper, also includes particulary slavish pro-Soviet communists, as well as communist-flavoured nationalists.
+
+	totalism = {
+		types = {
+			totalism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 90 5 15 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 10.0
+				army_intel_to_others = 15.0
+				navy_intel_to_others = 15.0
+				airforce_intel_to_others = 15.0
+			}
+		}
+		ai_neutral = yes
+	}
+
+	### Agrarian Communists as well as Maoism proper, also includes pro-Chinese communists and communist-flavoured ethnonationalists.
+
+	agrarian_communism = {
+		types = {
+			agrarian_communism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 125 30 15 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 10.0
+				army_intel_to_others = 15.0
+				navy_intel_to_others = 15.0
+				airforce_intel_to_others = 15.0
+			}
+		}
+		ai_neutral = yes
+	}
+
+	### Left Communists and Council Communists as well as Trotskyism proper, also includes some libertarian marxists that are not quite anarchist.
+	
+	councilism = {
+		types = {
+			councilism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 110 10 35 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				civilian_intel_to_others = 10.0
+				army_intel_to_others = 15.0
+				navy_intel_to_others = 15.0
+				airforce_intel_to_others = 15.0
+			}
+		}
+		ai_neutral = yes
+	}
+	
+	### Broad group of the libertarian left, such as libertarian socialists, anarcho-communists, and anarcho-syndicalists.
+	
+	anarchism = {
+		types = {
+			anarchism_subtype = {}
+		}
+		dynamic_faction_names = {}
+		color = { 65 5 25 }
+		rules = {
+			can_create_collaboration_government = no
+			can_force_government = no
+			can_puppet = no
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		modifiers = {
+			hidden_modifier = {
+				ai_get_ally_desire_factor = -500
+				civilian_intel_to_others = 20.0
+				army_intel_to_others = 15.0
+				navy_intel_to_others = 15.0
+				airforce_intel_to_others = 15.0
+			}
+		}
+		ai_neutral = yes
 	}
 }

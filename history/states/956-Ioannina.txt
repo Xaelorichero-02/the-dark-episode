@@ -22,10 +22,10 @@ state={
 	}
 
 	provinces={
-		841 3914 3980 9805 9837 9916 
+		841 3914 3980 9805 9916 
 	}
 	manpower=413978
-	state_category=rural
 	buildings_max_level_factor=1.000
+	state_category=rural
 	local_supplies=0.000
 }

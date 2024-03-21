@@ -3,11 +3,11 @@ characters={
 		name="Franz Joseph I"
 		portraits={
 			civilian={
-				large="gfx/leaders/AUH/Portrait_Habsburg_Franz_Joseph_I.dds"
+				large="gfx/leaders/AUS/Portrait_Austria_Franz_Joseph_I.dds"
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=monarchism_subtype
 			expire="1916.11.21.1"
 			traits = {
 				kaiser_of_the_old_world
@@ -18,11 +18,11 @@ characters={
 		name="Karl I"
 		portraits={
 			civilian={
-				large="gfx/leaders/AUH/Portrait_Habsburg_Karl_I.dds"
+				large="gfx/leaders/AUS/Portrait_Austria_Karl_I.dds"
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=monarchism_subtype
 			expire="1965.1.1.1"
 		}
 	}
@@ -30,8 +30,8 @@ characters={
 		name="Franz Conrad von Hötzendorf"
 		portraits={
 			army={
-				large="gfx/leaders/AUH/Portrait_Habsburg_Franz_Conrad_von_Hotzendorf.dds"
-				small="gfx/advisors/AUH/Portrait_Habsburg_Franz_Conrad_von_Hotzendorf.dds"
+				large="gfx/leaders/AUS/Portrait_Austria_Franz_Conrad_von_Hotzendorf.dds"
+				small="gfx/advisors/AUS/Portrait_Austria_Franz_Conrad_von_Hotzendorf.dds"
 			}
 		}
 		field_marshal={
@@ -67,8 +67,8 @@ characters={
 		name="Arthur Arz von Straußenburg"
 		portraits={
 			army={
-				large="gfx/leaders/AUH/Portrait_Habsburg_Arthur_Arz_von_Straussenburg.dds"
-				small="gfx/advisors/AUH/Portrait_Habsburg_Arthur_Arz_von_Straussenburg.dds"
+				large="gfx/leaders/AUS/Portrait_Austria_Arthur_Arz_von_Straussenburg.dds"
+				small="gfx/advisors/AUS/Portrait_Austria_Arthur_Arz_von_Straussenburg.dds"
 			}
 		}
 		corps_commander={
@@ -94,8 +94,8 @@ characters={
 		name="Friedrich von Beck-Rzikowsky"
 		portraits={
 			army={
-				large="gfx/leaders/AUH/Portrait_Habsburg_Friedrich_von_Beck_Rzikowsky.dds"
-				small="gfx/advisors/AUH/Portrait_Habsburg_Friedrich_von_Beck_Rzikowsky.dds"
+				large="gfx/leaders/AUS/Portrait_Austria_Friedrich_von_Beck_Rzikowsky.dds"
+				small="gfx/advisors/AUS/Portrait_Austria_Friedrich_von_Beck_Rzikowsky.dds"
 			}
 		}
 		corps_commander={
@@ -148,8 +148,8 @@ characters={
 		name="Eduard von Böhm-Ermolli"
 		portraits={
 			army={
-				large="gfx/leaders/AUH/Portrait_Habsburg_Eduard_von_Bohm_Ermolli.dds"
-				small="gfx/advisors/AUH/Portrait_Habsburg_Eduard_von_Bohm_Ermolli.dds"
+				large="gfx/leaders/AUS/Portrait_Austria_Eduard_von_Bohm_Ermolli.dds"
+				small="gfx/advisors/AUS/Portrait_Austria_Eduard_von_Bohm_Ermolli.dds"
 			}
 		}
 		field_marshal={
@@ -175,8 +175,8 @@ characters={
 		name="Friedrich von Österreich-Teschen"
 		portraits={
 			army={
-				large="gfx/leaders/AUH/Portrait_Habsburg_Friedrich_von_Osterreich_Teschen.dds"
-				small="gfx/advisors/AUH/Portrait_Habsburg_Friedrich_von_Osterreich_Teschen.dds"
+				large="gfx/leaders/AUS/Portrait_Austria_Friedrich_von_Osterreich_Teschen.dds"
+				small="gfx/advisors/AUS/Portrait_Austria_Friedrich_von_Osterreich_Teschen.dds"
 			}
 		}
 		field_marshal={
@@ -192,8 +192,8 @@ characters={
 		name="Hermann Kövess von Kövessháza"
 		portraits={
 			army={
-				large="gfx/leaders/AUH/Portrait_Habsburg_Hermann_Kovess_von_Kovesshaza.dds"
-				small="gfx/advisors/AUH/Portrait_Habsburg_Hermann_Kovess_von_Kovesshaza.dds"
+				large="gfx/leaders/AUS/Portrait_Austria_Hermann_Kovess_von_Kovesshaza.dds"
+				small="gfx/advisors/AUS/Portrait_Austria_Hermann_Kovess_von_Kovesshaza.dds"
 			}
 		}
 		field_marshal={
@@ -229,8 +229,8 @@ characters={
 		name="Svetozar Boroević von Bojna"
 		portraits={
 			army={
-				large="gfx/leaders/AUH/Portrait_Habsburg_Svetozar_Boroevic_von_Bojna.dds"
-				small="gfx/advisors/AUH/Portrait_Habsburg_Svetozar_Boroevic_von_Bojna.dds"
+				large="gfx/leaders/AUS/Portrait_Austria_Svetozar_Boroevic_von_Bojna.dds"
+				small="gfx/advisors/AUS/Portrait_Austria_Svetozar_Boroevic_von_Bojna.dds"
 			}
 		}
 		field_marshal={
@@ -256,8 +256,8 @@ characters={
 		name="Géza Lukachich von Somorja"
 		portraits={
 			army={
-				large="gfx/leaders/AUH/Portrait_Habsburg_Geza_Lukachich_von_Somorja.dds"
-				small="gfx/advisors/AUH/Portrait_Habsburg_Geza_Lukachich_von_Somorja.dds"
+				large="gfx/leaders/AUS/Portrait_Austria_Geza_Lukachich_von_Somorja.dds"
+				small="gfx/advisors/AUS/Portrait_Austria_Geza_Lukachich_von_Somorja.dds"
 			}
 		}
 		corps_commander={
@@ -273,8 +273,8 @@ characters={
 		name="Albert Bartha"
 		portraits={
 			army={
-				large="gfx/leaders/AUH/Portrait_Habsburg_Albert_Bartha.dds"
-				small="gfx/advisors/AUH/Portrait_Habsburg_Albert_Bartha.dds"
+				large="gfx/leaders/AUS/Portrait_Austria_Albert_Bartha.dds"
+				small="gfx/advisors/AUS/Portrait_Austria_Albert_Bartha.dds"
 			}
 		}
 		corps_commander={
@@ -324,8 +324,8 @@ characters={
 		name="Paul Puhallo von Brlog"
 		portraits={
 			army={
-				large="gfx/leaders/AUH/Portrait_Habsburg_Paul_Puhallo_von_Brlog.dds"
-				small="gfx/advisors/AUH/Portrait_Habsburg_Paul_Puhallo_von_Brlog.dds"
+				large="gfx/leaders/AUS/Portrait_Austria_Paul_Puhallo_von_Brlog.dds"
+				small="gfx/advisors/AUS/Portrait_Austria_Paul_Puhallo_von_Brlog.dds"
 			}
 		}
 		corps_commander={
@@ -375,8 +375,8 @@ characters={
 		name="Adolf von Boog"
 		portraits={
 			army={
-				large="gfx/leaders/AUH/Portrait_Habsburg_Adolf_von_Boog.dds"
-				small="gfx/advisors/AUH/Portrait_Habsburg_Adolf_von_Boog.dds"
+				large="gfx/leaders/AUS/Portrait_Austria_Adolf_von_Boog.dds"
+				small="gfx/advisors/AUS/Portrait_Austria_Adolf_von_Boog.dds"
 			}
 		}
 		corps_commander={
@@ -386,6 +386,42 @@ characters={
 			defense_skill=4
 			planning_skill=2
 			logistics_skill=3
+		}
+	}
+	AUH_agenor_maria_goluchowski={
+		name="Agenor Maria Gołuchowski"
+		portraits={
+			civilian={
+				small="gfx/advisors/POL/Portrait_Poland_Agenor_Maria_Gołuchowski.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = AUH_agenor_maria_goluchowski
+			allowed = {
+				original_tag = AUH
+			}
+			traits = {
+				moderate_diplomat
+			}
+		}
+	}
+	AUH_ottokar_czernin={
+		name="Ottokar Czernin"
+		portraits={
+			civilian={
+				small="gfx/advisors/AUS/Portrait_Austria_Ottokar_Czernin.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = AUH_ottokar_czernin
+			allowed = {
+				original_tag = AUH
+			}
+			traits = {
+				anti_partisan_advocate
+			}
 		}
 	}
 }

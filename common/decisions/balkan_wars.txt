@@ -1,0 +1,235 @@
+balkan_league_cat = {
+	
+	BALKAN_form_balkan_league = {
+		allowed = {
+			OR = {
+				original_tag = SER
+				original_tag = BUL
+			}
+		}
+		available = {
+			BUL = {
+				exists = yes
+				is_puppet = no
+			}
+			SER = {
+				exists = yes
+				is_puppet = no
+			}
+		}
+		visible = {
+			BUL = {
+				exists = yes
+				is_puppet = no
+			}
+			SER = {
+				exists = yes
+				is_puppet = no
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				date>1912.3.12
+				factor = 10
+			}
+		}
+		complete_effect = {
+			create_faction = balkan_league
+			add_to_faction = SER
+			add_to_faction = BUL
+			set_global_flag = balkan_league_formed
+		}
+	}
+
+	BALKAN_invite_montenegro = {
+		allowed = {
+			OR = {
+				original_tag = SER
+				original_tag = BUL
+			}
+		}
+		available = {
+			MNT = {
+				exists = yes
+				is_puppet = no
+			}
+			has_global_flag = balkan_league_formed
+		}
+		visible = {
+			MNT = {
+				exists = yes
+				is_puppet = no
+			}
+			has_global_flag = balkan_league_formed
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			add_to_faction = MNT
+			set_global_flag = balkan_league_montenegro
+		}
+	}
+	BALKAN_invite_greece = {
+		allowed = {
+			OR = {
+				original_tag = SER
+				original_tag = BUL
+			}
+		}
+		available = {
+			GRE = {
+				exists = yes
+				is_puppet = no
+			}
+			has_global_flag = balkan_league_formed
+		}
+		visible = {
+			GRE = {
+				exists = yes
+				is_puppet = no
+			}
+			has_global_flag = balkan_league_formed
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_global_flag = balkan_league_montenegro
+				factor = 10
+			}
+		}
+		complete_effect = {
+			add_to_faction = GRE
+			set_global_flag = balkan_league_greece
+		}
+	}
+	BALKAN_invite_albania = {
+		allowed = {
+			OR = {
+				original_tag = SER
+				original_tag = BUL
+			}
+		}
+		available = {
+			ALB = {
+				exists = yes
+				is_puppet = no
+			}
+			has_global_flag = balkan_league_formed
+		}
+		visible = {
+			ALB = {
+				exists = yes
+				is_puppet = no
+			}
+			has_global_flag = balkan_league_formed
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_global_flag = balkan_league_montenegro
+				factor = 10
+			}
+		}
+		complete_effect = {
+			add_to_faction = ALB
+			set_global_flag = balkan_league_albania
+		}
+	}
+
+	BALKAN_war_with_ottomans = {
+		allowed = {
+			OR = {
+				original_tag = SER
+				original_tag = BUL
+			}
+		}
+		available = {
+			has_global_flag = balkan_league_formed
+			NOT = {
+				has_global_flag = balkan_league_montenegro
+			}
+		}
+		visible = {
+			has_global_flag = balkan_league_formed
+			NOT = {
+				has_global_flag = balkan_league_montenegro
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		is_good = yes
+		days_mission_timeout = 100
+		leads_to_war_with = OTT
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = OTT
+				type = liberate_wargoal
+			}
+			set_global_flag = first_balkan_war
+		}
+	}
+
+	BALKAN_war_with_ottomans_MNT = {
+		allowed = {
+			original_tag = MNT
+		}
+		available = {
+			has_global_flag = balkan_league_formed
+			has_global_flag = balkan_league_montenegro
+		}
+		visible = {
+			has_global_flag = balkan_league_formed
+			has_global_flag = balkan_league_montenegro
+		}
+		cost = 0
+		fire_only_once = yes
+		is_good = yes
+		days_mission_timeout = 100
+		leads_to_war_with = OTT
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = OTT
+				type = liberate_wargoal
+			}
+			set_global_flag = first_balkan_war
+		}
+	}
+
+	BALKAN_surrender_ottomans = {
+		allowed = {
+			original_tag = OTT
+		}
+		available = {
+			has_global_flag = first_balkan_war
+		}
+		visible = {
+			has_global_flag = first_balkan_war
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			BUL = {
+				country_event = balkan_wars.1
+			}
+		}
+	}
+}
+

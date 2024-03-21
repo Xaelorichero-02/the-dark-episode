@@ -1,4 +1,4 @@
-﻿capital = 4
+capital = 4
 
 oob = "AUH_1905"
 if = {
@@ -47,6 +47,8 @@ recruit_character = AUH_paul_puhallo_von_brlog
 recruit_character = AUH_sandor_bekutsja
 recruit_character = AUH_karoly_beregfy
 recruit_character = AUH_adolf_von_boog
+recruit_character = AUH_agenor_maria_goluchowski
+recruit_character = AUH_ottokar_czernin
 
 if = {
 	limit = {
@@ -65,17 +67,40 @@ if = {
 set_global_flag = AUH_serbia_irritated
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = monarchism
 	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	neutrality = 48
-	fascism = 50
-	democratic = 1
-	communism = 1
+	occultism = 0
+	national_collectivism = 0
+	national_syndicalism = 0
+	ultranationalism = 6.56
+	monarchism = 80.59
+	integralism = 0
+	corporatism = 0
+	minarchism = 0
+	reactionism = 0
+	fundamentalism = 0
+	general_nationalism = 0
+	despotism = 0
+	oligarchism = 0
+	paternalism = 0
+	centrism = 0
+	conservatism = 0
+	conservative_liberalism = 0
+	liberal_conservatism = 0
+	liberalism = 5.66
+	agrarian_populism = 0
+	agrarian_socialism = 0
+	organicism = 0
+	progressivism = 7.19
+	radicalism = 0
+	syndicalism = 0
+	communism = 0
+	vanguardism = 0
 }
 
 set_stability = 0.3

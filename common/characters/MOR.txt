@@ -1,0 +1,50 @@
+characters={
+	MOR_abdelaziz_i={
+		name="Abdelaziz I"
+		portraits={
+			civilian={
+				large="gfx/leaders/MOR/Portrait_Morocco_Abdelaziz_I.dds"
+			}
+		}
+		country_leader={
+			ideology=monarchism_subtype
+			expire="1908.8.21.1"
+		}
+	}
+	MOR_abdehafid_i={
+		name="Abdelhafid I"
+		portraits={
+			civilian={
+				large="gfx/leaders/MOR/Portrait_Morocco_Abdelhafid_I.dds"
+			}
+		}
+		country_leader={
+			ideology=monarchism_subtype
+			expire="1912.4.4.1"
+		}
+	}
+	MOR_yusef_i={
+		name="Yusef I"
+		portraits={
+			civilian={
+				large="gfx/leaders/MOR/Portrait_Morocco_Yusef_I.dds"
+			}
+		}
+		country_leader={
+			ideology=monarchism_subtype
+			expire="1927.11.17.1"
+		}
+	}
+	MOR_mohammed_v={
+		name="Mohammed V"
+		portraits={
+			civilian={
+				large="gfx/leaders/MOR/Portrait_Morocco_Mohammed_V.dds"
+			}
+		}
+		country_leader={
+			ideology=monarchism_subtype
+			expire="1965.1.1.1"
+		}
+	}
+}

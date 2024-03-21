@@ -6,7 +6,11 @@ state={
 	}
 	history = {
 		owner = CAN
+		buildings = {
+			infrastructure = 1
+		}
 		add_core_of = CAN
+		add_core_of = INU
 	}
 	manpower=10000
 	state_category = pastoral

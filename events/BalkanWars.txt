@@ -1,0 +1,181 @@
+﻿###########################
+# Balkan Wars Events
+###########################
+
+add_namespace = balkan_wars
+
+# Ottomans Surrender to BUL
+country_event = {
+	id = balkan_wars.1
+	title = balkan_wars.1.t
+	desc = balkan_wars.1.d
+	picture = GFX_report_event_african_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = balkan_wars.1.a
+		custom_effect_tooltip = historial_choice_tt
+		ai_chance = {
+			base = 10
+		}
+		BUL = {
+			if = {
+				limit = {
+					959 = {
+						is_owned_by = OTT
+					}
+				}
+				transfer_state = 959
+			}
+			if = {
+				limit = {
+					940 = {
+						is_owned_by = OTT
+					}
+				}
+				transfer_state = 940
+			}
+			if = {
+				limit = {
+					941 = {
+						is_owned_by = OTT
+					}
+				}
+				transfer_state = 941
+			}
+			if = {
+				limit = {
+					211 = {
+						is_owned_by = OTT
+					}
+				}
+				transfer_state = 211
+			}
+			if = {
+				limit = {
+					184 = {
+						is_owned_by = OTT
+					}
+				}
+				transfer_state = 184
+			}
+		}
+		SER = {
+			if = {
+				limit = {
+					939 = {
+						is_owned_by = OTT
+					}
+				}
+				transfer_state = 939
+			}
+			if = {
+				limit = {
+					938 = {
+						is_owned_by = OTT
+					}
+				}
+				transfer_state = 938
+			}
+			if = {
+				limit = {
+					802 = {
+						is_owned_by = OTT
+					}
+				}
+				transfer_state = 802
+			}
+			if = {
+				limit = {
+					943 = {
+						is_owned_by = OTT
+					}
+				}
+				transfer_state = 943
+			}
+			if = {
+				limit = {
+					106 = {
+						is_owned_by = OTT
+					}
+				}
+				transfer_state = 106
+			}
+			if = {
+				limit = {
+					962 = {
+						is_owned_by = OTT
+					}
+				}
+				transfer_state = 962
+			}
+		}
+		GRE = {
+			if = {
+				limit = {
+					731 = {
+						is_owned_by = OTT
+					}
+				}
+				transfer_state = 731
+			}
+			if = {
+				limit = {
+					956 = {
+						is_owned_by = OTT
+					}
+				}
+				transfer_state = 956
+			}
+			if = {
+				limit = {
+					805 = {
+						is_owned_by = OTT
+					}
+				}
+				transfer_state = 805
+			}
+		}
+		ALB = {
+			if = {
+				limit = {
+					44 = {
+						is_owned_by = OTT
+					}
+				}
+				transfer_state = 44
+			}
+			if = {
+				limit = {
+					934 = {
+						is_owned_by = OTT
+					}
+				}
+				transfer_state = 934
+			}
+		}
+		hidden_effect = {
+			news_event = TDE_news.10
+			OTT = {
+				white_peace = ALB
+				white_peace = BUL
+				white_peace = GRE
+				white_peace = SER
+				white_peace = MNT
+			}
+		}
+	}
+	
+	option = {
+		name = balkan_wars.1.b
+		add_war_support = -0.1
+		ai_chance = {
+			base = 0
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+		}
+	}
+}

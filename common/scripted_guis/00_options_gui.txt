@@ -1,0 +1,129 @@
+scripted_gui = {
+	TDE_options_gui = {
+		context_type = player_context
+		window_name = "tde_options_container"
+		parent_window_token = top_bar
+		dirty = global.tde_options_dirty
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			has_global_flag = tde_options_visible
+		}
+
+		effects = {
+			rename_button_click = {
+				if = {
+					limit = { has_global_flag = endonyms }
+					set_variable = { global.renaming_frame = 1 }
+					clr_global_flag = endonyms
+				}
+				else = {
+					set_variable = { global.renaming_frame = 2 }
+					set_global_flag = endonyms
+				}
+				add_to_variable = { global.tde_options_dirty = 1 }
+			}
+			regional_news_button_click = {
+				if = {
+					limit = { has_global_flag = NEWS_SOME }
+					set_variable = { global.regional_news_frame = 1 }
+					clr_global_flag = NEWS_SOME
+
+					#also disable all news
+					set_variable = { global.world_news_frame = 1 }
+					clr_global_flag = NEWS_ALL
+				}
+				else = {
+					set_variable = { global.regional_news_frame = 2 }
+					set_global_flag = NEWS_SOME
+				}
+				add_to_variable = { global.tde_options_dirty = 1 }
+			}
+			world_news_button_click = {
+				if = {
+					limit = { has_global_flag = NEWS_ALL }
+					set_variable = { global.world_news_frame = 1 }
+					clr_global_flag = NEWS_ALL
+				}
+				else = {
+					set_variable = { global.world_news_frame = 2 }
+					set_global_flag = NEWS_ALL
+
+					#also enable regional news
+					set_variable = { global.regional_news_frame = 2 }
+					set_global_flag = NEWS_SOME
+				}
+				add_to_variable = { global.tde_options_dirty = 1 }
+			}
+		}
+
+		properties = {
+			rename_button = {
+				frame = global.renaming_frame
+			}
+			regional_news_button = {
+				frame = global.regional_news_frame
+			}
+			world_news_button = {
+				frame = global.world_news_frame
+			}
+		}
+	}
+
+	TDE_options_button = {
+		context_type = player_context
+		window_name = "tde_options_button_container"
+		parent_window_token = top_bar
+		dirty = global.tde_options_dirty
+
+		ai_enabled = {
+			always = no
+		}
+
+		effects = {
+			tde_options_button_click = {
+				if = {
+					limit = { has_global_flag = tde_options_visible }
+					clr_global_flag = tde_options_visible
+				}
+				else = {
+					set_global_flag = tde_options_visible
+				}
+			}
+		}
+	}
+
+	TDE_help_button = {
+		context_type = player_context
+		window_name = "tde_help_button_container"
+		parent_window_token = top_bar
+		dirty = TDE_welcome_splash_variable
+
+		ai_enabled = { always = no }
+
+		effects = {
+			tde_help_button_click = {
+				if = {
+					limit = { has_variable = TDE_welcome_splash_variable }
+					clear_variable = TDE_welcome_splash_variable
+				}
+				else = {
+					if = {
+						limit = { tag_has_path_guide = yes }
+						set_variable = { TDE_welcome_splash_variable = 2 }
+					}
+					else_if = {
+						limit = { tag_has_country_intro = yes }
+						set_variable = { TDE_welcome_splash_variable = 1 }
+					}
+					else = {
+						set_variable = { TDE_welcome_splash_variable = 3 }
+					}
+				}
+			}
+		}
+	}
+}

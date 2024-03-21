@@ -1,0 +1,29 @@
+state={
+	id=962
+	name="STATE_962"
+
+	history={
+		owner = OTT
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 2
+
+		}
+		victory_points = {
+			3882 5 
+		}
+		add_core_of = SER
+		add_core_of = ALB
+		add_core_of = MAC
+
+	}
+
+	provinces={
+		833 867 
+	}
+	manpower=119542
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

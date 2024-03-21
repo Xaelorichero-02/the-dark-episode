@@ -1,4 +1,3 @@
-
 state={
 	id=804
 	name="STATE_804"
@@ -20,14 +19,17 @@ state={
 		1908.10.7 = {
 			owner = AUH
 			controller = AUH
+
 		}
 		1911.1.1 = {
 			add_core_of = AUH
+
 		}
+
 	}
 
 	provinces={
-		953 6942 9894 11845 13302 
+		953 6942 9894 11845 
 	}
 	manpower=547200
 	buildings_max_level_factor=1.000
